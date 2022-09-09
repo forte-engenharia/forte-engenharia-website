@@ -1,14 +1,15 @@
 {
-  "name": "11ty-sass",
-  "version": "1.0.0",
-  "description": "11ty starter template with SASS support and Dark Mode.",
+  "name": "forte-engenharia",
+  "version": "0.0.1",
+  "description": "Forte Engenharia Website",
+  "author": "Douglas Junior <douglasrtl45@gmail.com>",
+  "private": false,
   "keywords": [
     "11ty",
     "SASS",
     "SCSS",
     "eleventy"
   ],
-  "author": "Nikita Zanella",
   "license": "ISC",
   "scripts": {
     "watch:sass": "node-sass --watch src/sass -o src/css",
