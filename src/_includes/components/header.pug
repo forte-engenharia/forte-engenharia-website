@@ -1,17 +1,17 @@
 header
-  nav
-    a(href='/')
-      img.logo(src='/assets/svg/logo.svg')
-    .mobile-menu
-      .line1
-      .line2
-      .line3
-    ul.nav-list
-      li
-        a.home(href='/') Home
-      li
-        a.same(href='/') Quem somos
-      li
-        a.same(href='/') Serviços
-      li
-        a.contact(href='/') Contato
+  nav.header__navigation
+    a.header__logo(href='/')
+      img.header__img(src='/assets/svg/logo.svg')
+    .header__mobile-menu.mobile-menu
+      .line1.mobile-menu__line
+      .line2.mobile-menu__line
+      .line3.mobile-menu__line
+    ul.header__list.nav-list
+      li.header__item
+        a.header__link.header__link--active(href='/') Home
+      li.header__item
+        a.header__link(href='/') Quem somos
+      li.header__item
+        a.header__link(href='/') Serviços
+      li.header__item
+        a.header__link.header__link--cta(href='/') Contato

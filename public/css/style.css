@@ -1,111 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Raleway&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  background: #FFFFFF; }
-
-nav {
+.header__navigation {
   background-size: cover;
   width: 100%; }
-  nav a {
-    text-decoration: none;
-    color: #FFFFFF;
+
+.header__logo {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: 0.3s; }
+
+.header__img {
+  position: absolute;
+  width: 233px;
+  height: 145px;
+  left: 75px;
+  top: 47px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+  .header__img:hover {
+    opacity: 0.7;
     transition: 0.3s; }
-    nav a .logo {
+
+.header__list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 70px;
+  margin-right: 50px;
+  list-style: none;
+  padding-top: 100px;
+  font-family: "Raleway", sans-serif; }
+  @media (max-width: 1050px) {
+    .header__list {
       position: absolute;
-      width: 233px;
-      height: 145px;
-      left: 75px;
-      top: 47px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
-      nav a .logo:hover {
-        opacity: 0.7;
-        transition: 0.3s; }
-  nav .nav-list {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 70px;
-    margin-right: 50px;
-    list-style: none;
-    padding-top: 100px;
-    font-family: "Raleway", sans-serif; }
-  nav li {
-    margin-top: 20px;
-    margin-left: 10px;
-    font-size: 21px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
-  nav .contact {
-    margin-left: 50px;
-    border: 3px solid #046ED0;
-    padding: 12px;
-    border-radius: 2px;
-    opacity: 0.8; }
-    nav .contact:hover {
-      opacity: 1.0; }
-  nav .same {
-    opacity: 0.8; }
-    nav .same:hover {
-      opacity: 1.0; }
-  nav .home {
+      padding: 0px;
+      right: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in; } }
+
+.header__item {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 21px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  @media (max-width: 1050px) {
+    .header__item {
+      margin-left: 0;
+      opacity: 0; } }
+
+.header__cta {
+  margin-left: 50px;
+  border: 3px solid #046ED0;
+  padding: 12px;
+  border-radius: 2px;
+  opacity: 0.8; }
+  .header__cta:hover {
+    opacity: 1; }
+  @media (max-width: 1050px) {
+    .header__cta {
+      margin: 0;
+      border: none; } }
+
+.header__link {
+  opacity: 0.8; }
+  .header__link:hover {
+    opacity: 1; }
+  .header__link.header__link--active {
     border-bottom: 4px solid #046ED0;
     font-size: 24px; }
 
-.hero {
-  background: url(/assets/img/capa.home.png) no-repeat center center;
-  min-height: 100vh; }
-
-.text-header {
-  width: 1094px;
-  height: 214px;
-  left: 70px;
-  top: 510px;
-  font-family: "Domine", serif;
-  color: #FFFFFF; }
-  .text-header h1 {
-    font-size: 60px;
-    width: 90vw; }
-  .text-header p {
-    font-size: 22px;
-    width: 60vw; }
-
-.mobile-menu {
+.header__mobile-menu {
   display: none;
   cursor: pointer; }
-  .mobile-menu div {
+  .header__mobile-menu__line {
     width: 32px;
     height: 2px;
     background: #FFF;
     margin: 8px;
     transition: 0.3s; }
-
-@media (max-width: 1050px) {
-  body {
-    overflow-x: hidden; }
-  .nav-list {
-    position: absolute;
-    padding: 0px;
-    right: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in; }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0; }
-    .nav-list .contact {
-      margin: 0;
-      border: none; }
-  .mobile-menu {
-    display: block;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    z-index: 111; } }
+  @media (max-width: 1050px) {
+    .header__mobile-menu {
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      z-index: 111; } }
 
 .nav-list.active {
   transform: translateX(0); }
@@ -126,6 +106,34 @@ nav {
 
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-5px, -7px); }
+
+.hero {
+  background: url(/assets/img/capa.home.png) no-repeat center center;
+  min-height: 100vh;
+  padding: 0 80px; }
+  .hero__block {
+    min-width: 1094px;
+    left: 70px;
+    top: 510px;
+    font-family: "Domine", serif;
+    color: #FFFFFF; }
+  .hero__title {
+    font-size: 60px;
+    width: 90vw; }
+  .hero__copy {
+    font-size: 22px;
+    width: 60vw; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #FFFFFF; }
+  @media (max-width: 1050px) {
+    body {
+      overflow-x: hidden; } }
 
 .main-menu {
   background: #FFFFFF;
