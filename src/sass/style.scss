@@ -25,9 +25,7 @@ body{
 
 
 nav {
-    background: url(/assets/img/capa.home.png) no-repeat center center;
     background-size: cover;
-    height: 100vh;
     width: 100%;
 
     a {
@@ -81,7 +79,7 @@ nav {
         opacity: 0.8;
         &:hover {
             opacity: 1.0;
-         }
+        }
     }
 
     & .home{
@@ -90,8 +88,12 @@ nav {
 
 }
 
+.hero {
+    background: url(/assets/img/capa.home.png) no-repeat center center;
+    min-height: 100vh;
+}
+
 .text-header{
-    position: absolute;
     width: 1094px;
     height: 214px;
     left: 70px;
@@ -154,6 +156,7 @@ nav {
         position: absolute;
         right: 30px;
         top: 30px;
+        z-index: 111;
     }
 
 
