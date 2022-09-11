@@ -1,15 +1,32 @@
 
 .hero {
-  background: url(/assets/img/capa.home.png) no-repeat center center;
+  align-items: center;
+  background-image: url(/assets/img/capa.home.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   min-height: 100vh;
   padding: 0 80px;
+  position: relative;
+
+  &::after {
+    background-color: $darkblue;
+    content: '';
+    left: 0;
+    mix-blend-mode: overlay;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
 
   &__block {
-    min-width: 1094px;
-    left: 70px;
-    top: 510px;
+    max-width: 1440px;
     font-family: $textdom;
     color: $primarycolor;
+    margin: auto;
+    position: relative;
+    z-index: 3;
   }
 
   &__title {
