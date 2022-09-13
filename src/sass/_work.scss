@@ -1,0 +1,41 @@
+.work{
+  min-height: 100vh;
+  width: 1440px;
+  padding: 0 80px;
+  margin: auto;
+  position: relative;
+
+  &__title {
+      font-size: 100px;
+      font-family: $textrel;
+      text-align: center;
+      color: $rockcolor;
+      padding-bottom: 70px;
+  }
+
+  &__services{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+  }
+
+  &__list{
+      height: 338px;
+      width: 322px;
+      margin-left: 20px;
+  }
+
+  &__photo{
+      height: 338px;
+      width: 322px;
+      border-radius: 20px;
+  }
+
+  &__bta{
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+  }
+
+
+}

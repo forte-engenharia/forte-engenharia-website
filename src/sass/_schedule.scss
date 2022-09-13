@@ -1,0 +1,47 @@
+.schedule{
+  background-image: url(../assets/img/logo_conversa.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  &__heading{
+  max-width: 1440px;
+  font-family: $textrel;
+  font-style: normal;
+  color: $rockcolor;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+
+  }
+
+  &__bta {
+      background: $bluecolor;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 36px 67px;
+      gap: 10px;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      margin-top: 100px;
+      line-height: 43px;
+      text-decoration: none;
+      color: $primarycolor;
+
+      &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+      }
+  }
+}

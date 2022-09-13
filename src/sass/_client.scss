@@ -1,0 +1,48 @@
+.client{
+  background-color: $rockcolor;
+  min-height: 100vh;
+  width: 1440px;
+  padding: 0 80px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+
+  &__title{
+      font-size: 100px;
+      color: $primarycolor;
+      font-family: $textrel;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 0;
+  }
+
+  &__list{
+      color: $primarycolor;
+  }
+
+  &__building {
+      font-size: 50px;
+      font-family: $textdom;
+      text-align: center;
+  }
+
+  &__picture {
+      height: 400px;
+      width: 1000px;
+  }
+
+  &__par {
+      font-size: 20px;
+      font-family: $textdom;
+      text-align: center;
+      padding-top: 40px;
+  }
+
+  &__bta{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+}

@@ -1,5 +1,5 @@
 ---
-title: "Home"
+title: "Forte Engenharia - Especializada em atendimento condominial"
 layout: "base.html"
 ---
 
@@ -7,75 +7,83 @@ section.hero
   include /components/header.pug
   .hero__block
     h1.hero__title Somos a #{''}
-      strong Forte Engenharia
+      strong.hero__title.hero__title--bold Forte Engenharia
     p.hero__copy Atendemos seu condomínio com qualidade e profissionalismo durante todas fases da sua reforma.
-section.main-menu
-  ul.icons
-    li.icons-eng Planejamento com alto profissionalismo
-      img(src='/assets/svg/eng.svg')
-    li.icons-torre Construção de qualidade do início ao fim..
-      img(src='/assets/svg/torre.svg')
-    li.icons-predio Entregas eficientes e seguras.
-      img(src='/assets/svg/predio.svg')
-section.carouselservices
-  h2
-    b Nossos Serviços
-  ul.services
-    li
+section.talks
+  .talks__delivery
+    img.talks__icons(src='/assets/svg/plan.svg')
+    .talks__text Planejamento com alto profissionalismo
+    img.talks__icons(src='/assets/svg/verific.svg')
+    .talks__text Construção de qualidade do início ao fim..
+    img.talks__icons(src='/assets/svg/building.svg')
+    .talks__text Entregas eficientes e seguras.
+section.work
+  h2.work__title
+    strong Nossos Serviços
+  .work__services.js-carousel--dual
+    .work__list
+      a.work__back(href='/')
+        img.work__photo(src="/assets/img/projetos.png")
+    .work__list
+      a.work__back(href='/')
+        img.work__photo(src="/assets/img/retrofit.png")
+    .work__list
+      a.work__back(href='/')
+        img.work__photo(src="/assets/img/reforma.png")
+    .work__list
+      a.work__back(href='/')
+        img.work__photo(src="/assets/img/laudos.png")
+    .work__list
+      a.work__back(href='/')
+        img.work__photo(src="/assets/img/consultoria.png")
+  button.js-carousel--dual(aria-label='Anterior') 
+  button.js-carousel--dual(aria-label='Próximo') 
+  .js-carousel--dual-dots(role='tablist')
+section.client
+  h2.client__title
+    strong Nossos Clientes
+  .client__list.js-carousel--simple
+    .client__building 
       a(href='/')
-        img(src="/assets/img/projetos.png")
-    li
-      a(href='/')
-        img(src="/assets/img/retrofit.png")
-    li
-      a(href='/')
-        img(src="/assets/img/reforma.png")
-    li
-      a(href='/')
-        img(src="/assets/img/laudos.png")
-    li
-      a(href='/')
-        img(src="/assets/img/consultoria.png")
-  button(aria-label='Anterior') <<
-  button(aria-label='Próximo') >>
-  div(role='tablist')
-section.carouselclient
-  h2
-    b Nossos Clientes
-  ul.client
-    li Edifício Ópera Prima
-      a(href='/')
-        img(src="/assets/img/opera.png")
-      p
-        b Serviços:
+        img.client__picture(src="/assets/img/opera.png")
+      h4.client__headline 
+        strong Edifício Ópera Prima
+      p.client__par
+        strong Serviços: #{''}
         |  Retrofit da fachada junto com a reforma da guarita.
-    li Edifício Golden Park
+    .client__building 
       a(href='/')
-        img(src="/assets/img/golden.png")
-      p
-        b Serviço:
-        | ELABORAÇÃO DE PROJETOS PARA HALL DOS ELEVADORES / ELABORAÇÃO PROJETO PARA SALÃO GOURMET.
-    li Edifício Solar D’ América
+        img.client__picture(src="/assets/img/golden.png")
+      h4.client__headline 
+        strong Edifício Golden Park
+      p.client__par
+        strong Serviço: #{''}
+        | Elaboração de projetos para hall dos elevadores / Elaboração projeto para salão gourmet.
+    .client__building 
       a(href='/')
-        img(src="/assets/img/solar.png")
-      p
-        b Serviço:
+        img.client__picture(src="/assets/img/solar.png")
+      h4.client__headline 
+        strong Edifício Solar D’ América
+      p.client__par
+        strong Serviço: #{''}
         | Reforma da fachada.
-    li Edifício Caravelas
+    .client__building 
       a(href='/')
-        img(src="/assets/img/caravelas.png")
-      p
-        b Serviço:
-        | ASSESSORIA COM ACOMPANHAMENTO TÉCNICO.
-  button(aria-label='Anterior') <<
-  button(aria-label='Próximo') >>
-  div(role='tablist')
-section.contacts-button
-  h2
-    | Começe sua
-    b reforma
-    |  com a qualidade e profissionalismo da
-    b Forte Engenharia
-  a.contacts-button-schedule(href='/') Agende uma conversa
+        img.client__picture(src="/assets/img/caravelas.png")
+      h4.client__headline 
+        strong Edifício Caravelas
+      p.client__par
+        strong Serviço: #{''}
+        | Assessoria com acompanahmento técnico.
+  button.js-carousel--simple(aria-label='Anterior')
+  button.js-carousel--simple(aria-label='Próximo')
+  .js-carousel--simple-dots(role='tablist')
+section.schedule
+  h2.schedule__heading
+    | Começe sua #{''}
+    strong reforma
+    |  com a qualidade e profissionalismo da #{''}
+    strong Forte Engenharia
+  a.schedule__bta(href='/') Agende uma conversa
 
 include /components/footer.pug

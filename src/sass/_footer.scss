@@ -1,0 +1,72 @@
+.contacts{
+  background-color: $rockcolor;
+  min-height: 60vh;
+  width: 1440px;
+  padding: 80px 60px;
+  margin: auto;
+  position: relative;
+  display: flex;
+
+  &__logo{
+    width: 105px;
+    height: 148px;
+  }
+
+  &__information{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  &__headtitle{
+      font-family: $textrel;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      padding-bottom: 50px;
+      color: $primarycolor;
+  }
+  
+  &__roll{
+      margin-bottom: 60px;
+      font-family: $textdom;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 20px;
+          
+    }
+
+    &__list{      
+      text-decoration: none;
+      list-style: none;
+      font-family: $primarycolor;
+      font-style: normal;
+      font-weight: 700;
+      padding-left: 120px;
+  }
+
+  &__link{
+    text-decoration: none;
+    color: $primarycolor;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+    &--line{
+      text-decoration: underline;
+    }
+    
+      
+    }
+    
+    &__frame{
+      float: left;
+      margin-right: 20px;
+    }
+    
+}
