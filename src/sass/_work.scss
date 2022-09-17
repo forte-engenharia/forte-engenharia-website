@@ -6,36 +6,31 @@
   position: relative;
 
   &__title {
-      font-size: 100px;
-      font-family: $textrel;
-      text-align: center;
-      color: $rockcolor;
-      padding-bottom: 70px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+    font-family: $textrel;
+    text-align: center;
+    color: $rockcolor;
+    padding-bottom: 70px;
   }
 
-  &__services{
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
+  &__back{
+    background-color: $backrockcolor;
+    border-radius: 20px;
   }
+
 
   &__list{
-      height: 338px;
-      width: 322px;
-      margin-left: 20px;
+    display: flex;
+    
   }
 
   &__photo{
-      height: 338px;
-      width: 322px;
-      border-radius: 20px;
+    height: 338px;
+    width: 322px;
+    border-radius: 20px;
+    mix-blend-mode: luminosity;
   }
-
-  &__bta{
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-  }
-
 
 }
