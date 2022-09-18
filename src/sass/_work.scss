@@ -1,6 +1,6 @@
 .work{
   min-height: 100vh;
-  width: 1440px;
+  max-width: 1440px;
   padding: 0 80px;
   margin: auto;
   position: relative;
@@ -15,22 +15,22 @@
     padding-bottom: 70px;
   }
 
-  &__back{
-    background-color: $backrockcolor;
+  &__back {
     border-radius: 20px;
   }
 
-
-  &__list{
-    display: flex;
-    
+  &__back:not(:hover) {
+    background-color: $backrockcolor;
   }
 
-  &__photo{
+  &__list {
+    display: flex;
+  }
+
+  &__photo {
     height: 338px;
     width: 322px;
     border-radius: 20px;
     mix-blend-mode: luminosity;
   }
-
 }

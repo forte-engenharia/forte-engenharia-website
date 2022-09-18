@@ -1,7 +1,7 @@
 .contacts{
   background-color: $rockcolor;
   min-height: 60vh;
-  width: 1440px;
+  max-width: 1440px;
   padding: 80px 60px;
   margin: auto;
   position: relative;
@@ -28,7 +28,7 @@
       padding-bottom: 50px;
       color: $primarycolor;
   }
-  
+
   &__roll{
       margin-bottom: 60px;
       font-family: $textdom;
@@ -36,10 +36,10 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 21px;
-          
+
     }
 
-    &__list{      
+    &__list{
       text-decoration: none;
       list-style: none;
       font-family: $primarycolor;
@@ -57,10 +57,10 @@
         transition: 0.3s;
       }
     }
-    
+
     &__frame{
       float: left;
       margin-right: 20px;
     }
-    
+
 }

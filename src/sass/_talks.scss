@@ -4,15 +4,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   &__delivery {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 0 80px;
-    width: 1440px;
-    
+    max-width: 1440px;
+
     @media (max-width: 880px) {
       flex-direction: column;
       text-align: center;

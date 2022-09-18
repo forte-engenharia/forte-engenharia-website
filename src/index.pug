@@ -10,16 +10,19 @@ section.hero
       strong.hero__title.hero__title--bold Forte Engenharia
     p.hero__copy Atendemos seu condomínio com qualidade e profissionalismo durante todas fases da sua reforma.
 section.talks
-  .talks__delivery
-    .talks__backicons
-      img.talks__backicons--simbols(src='/assets/svg/plan.svg')
-    .talks__text Planejamento com alto profissionalismo
-    .talks__backicons
-      img.talks__backicons--simbols(src='/assets/svg/verific.svg')
-    .talks__text Construção de qualidade do início ao fim..
-    .talks__backicons
-      img.talks__backicons--simbols(src='/assets/svg/building.svg')
-    .talks__text Entregas eficientes e seguras.
+  ul.talks__delivery
+    li.talks__item
+      .talks__backicons
+        img.talks__backicons--simbols(src='/assets/svg/plan.svg')
+      .talks__text Planejamento com alto profissionalismo
+    li.talks__item
+      .talks__backicons
+        img.talks__backicons--simbols(src='/assets/svg/verific.svg')
+      .talks__text Construção de qualidade do início ao fim..
+    li.talks__item
+      .talks__backicons
+        img.talks__backicons--simbols(src='/assets/svg/building.svg')
+      .talks__text Entregas eficientes e seguras.
 section.work
   h2.work__title
     strong Nossos Serviços
@@ -46,34 +49,34 @@ section.client
   h2.client__title
     strong Nossos Clientes
   .client__list.js-carousel--simple
-    .client__building 
+    .client__building
       a(href='/')
         img.client__picture(src="/assets/img/opera.png")
-      h4.client__headline 
+      h4.client__headline
         strong Edifício Ópera Prima
       p.client__par
         strong Serviços: #{''}
         |  Retrofit da fachada junto com a reforma da guarita.
-    .client__building 
+    .client__building
       a(href='/')
         img.client__picture(src="/assets/img/golden.png")
-      h4.client__headline 
+      h4.client__headline
         strong Edifício Golden Park
       p.client__par
         strong Serviço: #{''}
         | Elaboração de projetos para hall dos elevadores / Elaboração projeto para salão gourmet.
-    .client__building 
+    .client__building
       a(href='/')
         img.client__picture(src="/assets/img/solar.png")
-      h4.client__headline 
+      h4.client__headline
         strong Edifício Solar D’ América
       p.client__par
         strong Serviço: #{''}
         | Reforma da fachada.
-    .client__building 
+    .client__building
       a(href='/')
         img.client__picture(src="/assets/img/caravelas.png")
-      h4.client__headline 
+      h4.client__headline
         strong Edifício Caravelas
       p.client__par
         strong Serviço: #{''}

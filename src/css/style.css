@@ -167,7 +167,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 0 80px;
-    width: 1440px; }
+    max-width: 1440px; }
     @media (max-width: 880px) {
       .talks__delivery {
         flex-direction: column;
@@ -195,7 +195,7 @@
 
 .work {
   min-height: 100vh;
-  width: 1440px;
+  max-width: 1440px;
   padding: 0 80px;
   margin: auto;
   position: relative; }
@@ -208,8 +208,9 @@
     color: #2A2E49;
     padding-bottom: 70px; }
   .work__back {
-    background-color: #2A2E49B2;
     border-radius: 20px; }
+  .work__back:not(:hover) {
+    background-color: #2A2E49B2; }
   .work__list {
     display: flex; }
   .work__photo {
@@ -221,7 +222,7 @@
 .client {
   background-color: #2A2E49;
   min-height: 100vh;
-  width: 1440px;
+  max-width: 1440px;
   padding: 0 80px;
   overflow-x: hidden;
   margin: auto;
@@ -296,7 +297,7 @@
 .contacts {
   background-color: #2A2E49;
   min-height: 60vh;
-  width: 1440px;
+  max-width: 1440px;
   padding: 80px 60px;
   margin: auto;
   position: relative;
@@ -352,3 +353,6 @@ body {
   @media (max-width: 1050px) {
     body {
       overflow-x: hidden; } }
+
+ul {
+  list-style: none; }
