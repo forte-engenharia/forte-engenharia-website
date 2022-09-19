@@ -3,9 +3,22 @@
   min-height: 100vh;
   max-width: 1440px;
   padding: 0 80px;
-  overflow-x: hidden;
   margin: auto;
   position: relative;
+
+  &::before{
+    background-color: $rockcolor;
+    content: '';
+    background-position: bottom;
+    position: absolute;
+    bottom: -299px;
+    left: -145px;
+    overflow-X: hidden;
+    height: 52vh;
+    width: 120%;
+    transform: rotate(16deg);
+    z-index: 0;
+  }
 
   &__title{
     font-weight: 700;
@@ -15,6 +28,11 @@
     color: $primarycolor;
     font-family: $textrel;
     padding: 80px 0;
+
+    @media (max-width: 780px) {
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
 
   &__list{
@@ -27,11 +45,21 @@
     line-height: 48px;
     font-family: $textdom;
     text-align: center;
+
+    @media (max-width: 780px){
+      font-size: 21px;
+      line-height: 24px;
+    }
   }
 
   &__picture {
     height: 400px;
     width: 1000px;
+
+    @media (max-width: 780px){
+      width: 500px;
+      height: 200px;
+    }
   }
 
   &__par {
@@ -40,8 +68,31 @@
     line-height: 38px;
     font-family: $textrel;
     text-align: center;
-    padding-top: 40px;
+    padding: 40px 0;
+    @media (max-width: 780px){
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 
+}
 
+.js-carousel--simple-prev, .js-carousel--simple-next{
+  display: none;
+}
+
+.js-carousel--simple-dots{
+  color: $primarycolor;
+}
+
+.glider-dot{
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background: #585868;
+  color: $primarycolor;
+  @media (max-width: 780px){
+    width: 12px;
+    height: 12px;
+  }
 }

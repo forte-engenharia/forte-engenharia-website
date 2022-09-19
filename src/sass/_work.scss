@@ -13,10 +13,16 @@
     text-align: center;
     color: $rockcolor;
     padding-bottom: 70px;
+
+    @media (max-width: 780px){
+      font-size: 36px;
+      line-height: 42px;
+    }
   }
 
   &__back {
     border-radius: 20px;
+    text-decoration: none;
   }
 
   &__back:not(:hover) {
@@ -29,8 +35,36 @@
 
   &__photo {
     height: 338px;
-    width: 322px;
+    width: 332px;
     border-radius: 20px;
     mix-blend-mode: luminosity;
+    @media (max-width: 780px){
+      height: 169px;
+      width:161px;
+      border-radius: 10px;
+    }
+
+    @media (max-width:1180px) and (min-width:780px) {
+      height: 238px;
+      width: 231px;
+    }
   }
+
+  &__tex{
+    text-align: center;
+    font-family: $textdom;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: $primarycolor;
+    @media (max-width: 780px){
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+}
+
+.js-carousel--dual-prev, .js-carousel--dual-next{
+  display: none;
 }

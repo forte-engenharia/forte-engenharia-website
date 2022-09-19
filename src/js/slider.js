@@ -3,7 +3,7 @@
 const $dualCarousel = document.querySelector('.js-carousel--dual');
 
 new Glider($dualCarousel,{
-  slidesToShow:3,
+  slidesToShow:2,
   slidesToScroll:2,
   scrollLock: true,
   draggable:true,
@@ -11,7 +11,23 @@ new Glider($dualCarousel,{
   arrows: {
     prev:".js-carousel--dual-prev",
     next:".js-carousel--dual-next",
-  }
+  }, 
+  responsive: [ 
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        itemWidth: 200,
+      }
+    },{
+      breakpoint: 1180,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+      }
+    }
+  ]
 });
 
 //Simple slider

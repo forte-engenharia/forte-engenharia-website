@@ -8,15 +8,22 @@
   display: flex;
 
   &__logo{
-    height: 148px;
-    width: auto;
+    width: 76.39px;
+    height: 108px;
+    @media (max-width: 860px){
+      display: none;
+    }
   }
 
   &__information{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
+    min-width: 100%;
+
+    @media (max-width: 780px) {
+      flex-direction: column;
+    }
   }
 
   &__headtitle{
@@ -27,6 +34,10 @@
       line-height: 28px;
       padding-bottom: 50px;
       color: $primarycolor;
+      @media (max-width: 780px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
   }
 
   &__roll{
@@ -36,6 +47,11 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 21px;
+
+      @media (max-width: 780px) {
+        font-size: 15px;
+        line-height: 17px;
+      }
 
     }
 

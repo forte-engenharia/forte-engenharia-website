@@ -136,7 +136,15 @@
     color: #FFFFFF;
     margin: auto;
     position: relative;
-    z-index: 3; }
+    z-index: 3;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column; }
+    @media (max-width: 780px) {
+      .hero__block {
+        text-align: left;
+        align-items: flex-start; } }
   .hero__title {
     width: 90vw;
     font-size: 70px;
@@ -148,31 +156,44 @@
       font-size: 76px;
       line-height: 106px;
       font-weight: 700; }
+    @media (max-width: 780px) {
+      .hero__title {
+        font-size: 35px;
+        line-height: 53px; } }
   .hero__copy {
     width: 60vw;
     font-weight: 400;
     font-size: 32px;
     line-height: 60px;
-    font-family: "Domine", sans-serif; }
+    font-family: "Domine", sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    @media (max-width: 780px) {
+      .hero__copy {
+        font-size: 16px;
+        line-height: 26px; } }
 
-.talks {
+.features {
   background: #FFFFFF;
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center; }
-  .talks__delivery {
+  .features__delivery {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 0 80px;
+    padding: 0 73px;
     max-width: 1440px; }
     @media (max-width: 880px) {
-      .talks__delivery {
+      .features__delivery {
         flex-direction: column;
         text-align: center; } }
-  .talks__backicons {
+  .features__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .features__backicons {
     background-color: #046ED033;
     width: 124px;
     height: 124px;
@@ -181,17 +202,31 @@
     align-items: center;
     justify-content: center; }
     @media (max-width: 880px) {
-      .talks__backicons {
-        padding: 30px 0; } }
-    .talks__backicons--simbols {
-      width: 49.17px;
-      height: 64px; }
-  .talks__text {
+      .features__backicons {
+        width: 64px;
+        height: 80px;
+        border-radius: 20px; } }
+    .features__backicons--simbols {
+      height: 69px;
+      width: 50px; }
+      @media (max-width: 880px) {
+        .features__backicons--simbols {
+          height: 34px;
+          width: 25px; } }
+  .features__text {
+    padding-top: 20px;
     font-family: "Raleway", sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
     line-height: 28px;
-    padding-left: 20px; }
+    text-align: center; }
+    @media (max-width: 880px) {
+      .features__text {
+        padding: 15px 0;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 14px; } }
 
 .work {
   min-height: 100vh;
@@ -207,26 +242,66 @@
     text-align: center;
     color: #2A2E49;
     padding-bottom: 70px; }
+    @media (max-width: 780px) {
+      .work__title {
+        font-size: 36px;
+        line-height: 42px; } }
   .work__back {
-    border-radius: 20px; }
+    border-radius: 20px;
+    text-decoration: none; }
   .work__back:not(:hover) {
     background-color: #2A2E49B2; }
   .work__list {
     display: flex; }
   .work__photo {
     height: 338px;
-    width: 322px;
+    width: 332px;
     border-radius: 20px;
     mix-blend-mode: luminosity; }
+    @media (max-width: 780px) {
+      .work__photo {
+        height: 169px;
+        width: 161px;
+        border-radius: 10px; } }
+    @media (max-width: 1180px) and (min-width: 780px) {
+      .work__photo {
+        height: 238px;
+        width: 231px; } }
+  .work__tex {
+    text-align: center;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FFFFFF; }
+    @media (max-width: 780px) {
+      .work__tex {
+        font-size: 20px;
+        line-height: 23px; } }
+
+.js-carousel--dual-prev, .js-carousel--dual-next {
+  display: none; }
 
 .client {
   background-color: #2A2E49;
   min-height: 100vh;
   max-width: 1440px;
   padding: 0 80px;
-  overflow-x: hidden;
   margin: auto;
   position: relative; }
+  .client::before {
+    background-color: #2A2E49;
+    content: '';
+    background-position: bottom;
+    position: absolute;
+    bottom: -299px;
+    left: -145px;
+    overflow-X: hidden;
+    height: 52vh;
+    width: 120%;
+    transform: rotate(16deg);
+    z-index: 0; }
   .client__title {
     font-weight: 700;
     font-size: 60px;
@@ -235,6 +310,10 @@
     color: #FFFFFF;
     font-family: "Raleway", sans-serif;
     padding: 80px 0; }
+    @media (max-width: 780px) {
+      .client__title {
+        font-size: 30px;
+        line-height: 35px; } }
   .client__list {
     color: #FFFFFF; }
   .client__building {
@@ -243,28 +322,59 @@
     line-height: 48px;
     font-family: "Domine", sans-serif;
     text-align: center; }
+    @media (max-width: 780px) {
+      .client__building {
+        font-size: 21px;
+        line-height: 24px; } }
   .client__picture {
     height: 400px;
     width: 1000px; }
+    @media (max-width: 780px) {
+      .client__picture {
+        width: 500px;
+        height: 200px; } }
   .client__par {
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
     font-family: "Raleway", sans-serif;
     text-align: center;
-    padding-top: 40px; }
+    padding: 40px 0; }
+    @media (max-width: 780px) {
+      .client__par {
+        font-size: 16px;
+        line-height: 19px; } }
+
+.js-carousel--simple-prev, .js-carousel--simple-next {
+  display: none; }
+
+.js-carousel--simple-dots {
+  color: #FFFFFF; }
+
+.glider-dot {
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background: #585868;
+  color: #FFFFFF; }
+  @media (max-width: 780px) {
+    .glider-dot {
+      width: 12px;
+      height: 12px; } }
 
 .schedule {
   background-image: url(../assets/img/logo_conversa.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-position: 3px -200px;
+  min-height: 108vh;
   padding: 0 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative; }
+  position: relative;
+  padding-top: 400px; }
   .schedule__heading {
     max-width: 1440px;
     font-family: "Raleway", sans-serif;
@@ -274,6 +384,10 @@
     font-size: 48px;
     line-height: 56px;
     text-align: center; }
+    @media (max-width: 780px) {
+      .schedule__heading {
+        font-size: 24px;
+        line-height: 28px; } }
   .schedule__bta {
     background: #046ED0;
     display: flex;
@@ -282,7 +396,7 @@
     align-items: center;
     padding: 20px 24px;
     gap: 10px;
-    font-family: 'Raleway';
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -290,6 +404,10 @@
     margin-top: 100px;
     text-decoration: none;
     color: #FFFFFF; }
+    @media (max-width: 780px) {
+      .schedule__bta {
+        font-size: 9px;
+        line-height: 10px; } }
     .schedule__bta:hover {
       opacity: 0.7;
       transition: 0.3s; }
@@ -303,13 +421,19 @@
   position: relative;
   display: flex; }
   .contacts__logo {
-    height: 148px;
-    width: auto; }
+    width: 76.39px;
+    height: 108px; }
+    @media (max-width: 860px) {
+      .contacts__logo {
+        display: none; } }
   .contacts__information {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%; }
+    min-width: 100%; }
+    @media (max-width: 780px) {
+      .contacts__information {
+        flex-direction: column; } }
   .contacts__headtitle {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -318,6 +442,10 @@
     line-height: 28px;
     padding-bottom: 50px;
     color: #FFFFFF; }
+    @media (max-width: 780px) {
+      .contacts__headtitle {
+        font-size: 20px;
+        line-height: 24px; } }
   .contacts__roll {
     margin-bottom: 60px;
     font-family: "Domine", sans-serif;
@@ -325,6 +453,10 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px; }
+    @media (max-width: 780px) {
+      .contacts__roll {
+        font-size: 15px;
+        line-height: 17px; } }
   .contacts__list {
     text-decoration: none;
     list-style: none;

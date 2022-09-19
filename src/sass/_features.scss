@@ -1,4 +1,4 @@
-.talks{
+.features{
   background: $primarycolor;
   min-height: 80vh;
   display: flex;
@@ -10,13 +10,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 0 80px;
+    padding: 0 73px;
     max-width: 1440px;
 
     @media (max-width: 880px) {
       flex-direction: column;
       text-align: center;
     }
+  }
+
+  &__item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__backicons{
@@ -29,22 +35,39 @@
     justify-content: center;
 
     @media (max-width: 880px) {
-      padding: 30px 0;
+      width: 64px;
+      height: 80px;
+      border-radius: 20px;
+
     }
 
     &--simbols{
-      width: 49.17px;
-      height: 64px;
+      height: 69px;
+      width: 50px;
+      @media (max-width: 880px) {
+        height: 34px;
+        width: 25px;
+      }
     }
   }
 
 
   &__text{
+    padding-top: 20px;
     font-family: $textrel;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
     line-height: 28px;
-    padding-left: 20px;
+    text-align: center;
+
+    @media (max-width: 880px) {
+      padding: 15px 0;
+      font-family: $textrel;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 14px;
+
+    }
   }
 
 }
