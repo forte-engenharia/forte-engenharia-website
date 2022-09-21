@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Raleway:wght@400;700&display=swap');
+@import 'colors';
+@import 'header';
+@import 'talks';
+@import 'team';
+@import 'journey';
+@import 'mission';
+@import 'schedule';
+@import 'footer';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: $primarycolor;
+
+  @media (max-width: 1050px) {
+    overflow-x: hidden;
+  }
+}
+
+ul {
+  list-style: none;
+}
+

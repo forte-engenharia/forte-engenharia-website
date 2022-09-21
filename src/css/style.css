@@ -247,12 +247,15 @@
         font-size: 36px;
         line-height: 42px; } }
   .work__back {
-    border-radius: 20px;
-    text-decoration: none; }
+    border-radius: 15px;
+    text-decoration: none;
+    position: relative; }
   .work__back:not(:hover) {
-    background-color: #2A2E49B2; }
+    background-color: #2A2E49B2;
+    height: 99%; }
   .work__list {
-    display: flex; }
+    display: flex;
+    padding-bottom: 100px; }
   .work__photo {
     height: 338px;
     width: 332px;
@@ -274,9 +277,28 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 46px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    position: absolute;
+    top: 40%;
+    right: 15%; }
     @media (max-width: 780px) {
       .work__tex {
+        font-size: 20px;
+        line-height: 23px; } }
+  .work__texts {
+    text-align: center;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FFFFFF;
+    position: absolute;
+    position: absolute;
+    top: 40%;
+    right: 0; }
+    @media (max-width: 780px) {
+      .work__texts {
         font-size: 20px;
         line-height: 23px; } }
 

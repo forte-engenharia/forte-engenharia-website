@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Raleway:wght@400;700&display=swap');
+@import 'colors';
+@import 'header';
+@import 'heros';
+@import 'show';
+@import 'footer';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+}

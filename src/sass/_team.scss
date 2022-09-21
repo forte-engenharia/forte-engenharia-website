@@ -1,0 +1,87 @@
+.team{
+  min-height: 100vh;
+  padding: 0 50px;
+  max-width: 1440px;
+  margin: auto;
+
+  &__heading{
+    font-family: $textrel;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+    text-align: center;
+    color: $rockcolor;
+    padding-top: 200px;
+
+    @media (max-width: 880px) {
+      font-family: $textrel;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 45px;
+    }
+  }
+
+  &__about{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 50px;
+
+    @media (max-width: 880px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__eclipse{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+
+  &__name{
+    font-family: $textdom;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    padding-top: 20px;
+    text-align: center;
+    
+    @media (max-width: 880px) {
+      font-family: $textrel;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+
+    
+  }
+
+  &__special{
+    font-family: $textrel;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 20px;
+
+    @media (max-width: 880px) {
+      font-family: $textrel;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 18px;
+      padding: 15px 0;
+    }
+  }
+
+  &__portrait{
+    width: 200px;
+    height: 200px;
+  }
+}

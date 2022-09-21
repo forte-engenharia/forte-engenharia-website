@@ -21,16 +21,19 @@
   }
 
   &__back {
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
+    position: relative;
   }
 
   &__back:not(:hover) {
     background-color: $backrockcolor;
+    height: 99%;
   }
 
   &__list {
     display: flex;
+    padding-bottom: 100px;
   }
 
   &__photo {
@@ -58,6 +61,27 @@
     font-size: 40px;
     line-height: 46px;
     color: $primarycolor;
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    @media (max-width: 780px){
+      font-size: 20px;
+      line-height: 23px;
+    }
+  }
+
+  &__texts{
+    text-align: center;
+    font-family: $textdom;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: $primarycolor;
+    position: absolute;
+    position: absolute;
+    top: 40%;
+    right: 0;
     @media (max-width: 780px){
       font-size: 20px;
       line-height: 23px;

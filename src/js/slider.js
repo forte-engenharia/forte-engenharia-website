@@ -46,3 +46,19 @@ new Glider($simpleCarousel,{
   },
   scrollLock: true,
 });
+
+// text slider 
+
+const $textCarousel = document.querySelector('.js-carousel--text');
+
+new Glider($textCarousel,{
+  slidesToShow:1,
+  slidesToScroll:1,
+  draggable:true,
+  dots:'.js-carousel--text-dots',
+  arrows:{
+    prev:".js-carousel--text-prev",
+    next:".js-carousel--text-next",
+  },
+  scrollLock: true,
+});

@@ -1,0 +1,68 @@
+.mission{
+  min-height: 100vh;
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+
+  &::before{
+    background-color: $rockcolor;
+    content: '';
+    background-position: bottom;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    width: 120%;
+    transform: rotate(-5deg);
+    z-index: -1;
+  }
+
+  &__slider{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+  }
+
+  &__text{
+    font-family: $textrel;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    color: $primarycolor;
+    padding-top: 5%;
+  }
+
+  &__message {
+    font-family: $textrel;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: $primarycolor;
+    padding-top: 3%;
+  }
+}
+
+.js-carousel--text-prev, .js-carousel--text-next{
+  display: none;
+}
+
+.js-carousel--text-dots{
+  color: $primarycolor;
+}
+
+.glider-dot{
+  z-index: 3;
+  width: 24px;
+  height: 24px;
+  background: #585868;
+  color: $primarycolor;
+  @media (max-width: 780px){
+    width: 12px;
+    height: 12px;
+  }
+}
