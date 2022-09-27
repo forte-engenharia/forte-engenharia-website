@@ -101,9 +101,9 @@
       opacity: .85;
     }
 
-    &.header__link--active {
-      @include titlehome();
-    }
+  }
+  &__link.is-active {
+    @include titlehome();
   }
 
   &__mobile-menu {

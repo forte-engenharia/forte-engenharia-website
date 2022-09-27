@@ -39,8 +39,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
-    
   }
 
   &__name{
@@ -54,7 +52,7 @@
     
     @media (max-width: 880px) {
       font-family: $textrel;
-      font-size: 18px;
+      font-size: 25px;
       font-weight: 700;
       line-height: 20px;
     }
@@ -73,10 +71,10 @@
 
     @media (max-width: 880px) {
       font-family: $textrel;
-      font-size: 15px;
+      font-size: 21px;
       font-weight: 500;
-      line-height: 18px;
-      padding: 15px 0;
+      line-height: 28px;
+      padding: 20px 0;
     }
   }
 

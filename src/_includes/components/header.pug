@@ -8,10 +8,10 @@ header.header
       .line3.header__menu-line
     ul.header__list.nav-list
       li.header__item
-        a.header__link.header__link--active(href='/') Home
+        a.header__link(href='/' class="#{ current.source == 'index' ? 'is-active' : '' }") Home
       li.header__item
-        a.header__link(href='/') Quem somos
+        a.header__link(href='/about' class="#{ current.source == 'about' ? 'is-active' : '' }") Quem somos
       li.header__item
-        a.header__link(href='/') Serviços
+        a.header__link(href='/services' class="#{ current.source == 'services' ? 'is-active' : '' }") Serviços
       li.header__item
-        a.header__link.header__link--cta(href='/') Contato
+        a.header__link.header__link--cta(href='/footer') Contato

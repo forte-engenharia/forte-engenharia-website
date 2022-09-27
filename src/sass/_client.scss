@@ -1,10 +1,9 @@
 .client{
   background-color: $rockcolor;
   min-height: 100vh;
-  max-width: 1440px;
-  padding: 0 80px;
   margin: auto;
   position: relative;
+  
 
   &::before{
     background-color: $rockcolor;
@@ -13,11 +12,10 @@
     position: absolute;
     bottom: -299px;
     left: -145px;
-    overflow-X: hidden;
     height: 52vh;
     width: 120%;
     transform: rotate(16deg);
-    z-index: 0;
+    z-index: 1;
   }
 
   &__title{
@@ -29,6 +27,7 @@
     font-family: $textrel;
     padding: 80px 0;
 
+
     @media (max-width: 780px) {
       font-size: 30px;
       line-height: 35px;
@@ -37,14 +36,20 @@
 
   &__list{
     color: $primarycolor;
+    z-index: 1;
   }
 
-  &__building {
+  &__building{
+    text-align: center;
+  }
+
+  &__headline {
     font-weight: 400;
     font-size: 42px;
     line-height: 48px;
     font-family: $textdom;
     text-align: center;
+    padding-top: 25px;
 
     @media (max-width: 780px){
       font-size: 21px;
@@ -57,8 +62,8 @@
     width: 1000px;
 
     @media (max-width: 780px){
-      width: 500px;
       height: 200px;
+      width: 500px;
     }
   }
 
@@ -68,7 +73,7 @@
     line-height: 38px;
     font-family: $textrel;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
     @media (max-width: 780px){
       font-size: 16px;
       line-height: 19px;
@@ -86,7 +91,7 @@
 }
 
 .glider-dot{
-  z-index: 3;
+  z-index: 1;
   width: 24px;
   height: 24px;
   background: #585868;

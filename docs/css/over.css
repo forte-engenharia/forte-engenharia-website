@@ -236,6 +236,14 @@
   padding: 0 80px;
   margin: auto;
   position: relative; }
+  .journey__title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 85px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    color: #2A2E49;
+    padding-bottom: 70px; }
 
 .mission {
   min-height: 100vh;

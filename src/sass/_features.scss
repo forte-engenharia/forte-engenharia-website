@@ -10,15 +10,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 0 73px;
+    padding: 0 71px;
     max-width: 1440px;
+    flex: 1 1 1;
 
     @media (max-width: 880px) {
       flex-direction: column;
       text-align: center;
     }
   }
-
+  
   &__item{
     display: flex;
     align-items: center;
@@ -38,8 +39,8 @@
       width: 64px;
       height: 80px;
       border-radius: 20px;
-
     }
+    
 
     &--simbols{
       height: 69px;
@@ -53,7 +54,7 @@
 
 
   &__text{
-    padding-top: 20px;
+    padding: 20px;
     font-family: $textrel;
     font-size: 26px;
     font-weight: 500;
@@ -66,8 +67,6 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 14px;
-
     }
   }
-
 }

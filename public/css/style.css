@@ -183,7 +183,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 0 73px;
+    padding: 0 40px;
     max-width: 1440px; }
     @media (max-width: 880px) {
       .features__delivery {
@@ -219,7 +219,8 @@
     font-size: 26px;
     font-weight: 500;
     line-height: 28px;
-    text-align: center; }
+    text-align: center;
+    padding-right: 20px; }
     @media (max-width: 880px) {
       .features__text {
         padding: 15px 0;
