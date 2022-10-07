@@ -1,8 +1,8 @@
-// Dual slider
+// Work slider
 
-const $dualCarousel = document.querySelector('.js-carousel--dual');
+const $workCarousel = document.querySelector('.js-carousel--dual');
 
-new Glider($dualCarousel,{
+new Glider($workCarousel,{
   slidesToShow:2,
   slidesToScroll:2,
   scrollLock: true,
@@ -47,18 +47,20 @@ new Glider($simpleCarousel,{
   scrollLock: true,
 });
 
-// text slider 
 
-const $textCarousel = document.querySelector('.js-carousel--text');
+//journey slider
 
-new Glider($textCarousel,{
-  slidesToShow:1,
-  slidesToScroll:1,
+const $journeyCarousel = document.querySelector('js-carousel--story')
+
+new Glider($journeyCarousel,{
+  slidesToShow:3,
+  slidesToScroll:3,
   draggable:true,
-  dots:'.js-carousel--text-dots',
+  dragVelocity:2,
+  dots:'.js-carousel--story-dots',
   arrows:{
-    prev:".js-carousel--text-prev",
-    next:".js-carousel--text-next",
+    prev:".js-carousel--story-prev",
+    next:".js-carousel--story-next",
   },
   scrollLock: true,
 });

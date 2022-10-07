@@ -189,7 +189,8 @@
     @media (max-width: 880px) {
       .features__delivery {
         flex-direction: column;
-        text-align: center; } }
+        text-align: center;
+        gap: 20px; } }
   .features__item {
     display: flex;
     align-items: center;
@@ -212,8 +213,8 @@
       width: 50px; }
       @media (max-width: 880px) {
         .features__backicons--simbols {
-          height: 34px;
-          width: 25px; } }
+          height: 50px;
+          width: 35px; } }
   .features__text {
     padding: 20px;
     font-family: "Raleway", sans-serif;
@@ -223,11 +224,11 @@
     text-align: center; }
     @media (max-width: 880px) {
       .features__text {
-        padding: 15px 0;
+        padding: 25px 0;
         font-family: "Raleway", sans-serif;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
-        line-height: 14px; } }
+        line-height: 20px; } }
 
 .work {
   min-height: 100vh;
@@ -235,6 +236,9 @@
   padding: 0 80px;
   margin: auto;
   position: relative; }
+  @media (max-width: 780px) {
+    .work {
+      min-height: 60vh; } }
   .work__title {
     font-weight: 700;
     font-size: 72px;
@@ -248,29 +252,48 @@
         font-size: 36px;
         line-height: 42px; } }
   .work__back {
-    border-radius: 15px;
-    text-decoration: none;
-    position: relative; }
-  .work__back:not(:hover) {
-    background-color: #2A2E49B2;
-    height: 99%; }
-  .work__list {
-    display: flex;
-    padding-bottom: 100px; }
-  .work__photo {
-    height: 338px;
-    width: 332px;
-    border-radius: 20px;
-    mix-blend-mode: luminosity; }
+    border-radius: 20px; }
     @media (max-width: 780px) {
-      .work__photo {
+      .work__back {
         height: 169px;
         width: 161px;
         border-radius: 10px; } }
     @media (max-width: 1180px) and (min-width: 780px) {
-      .work__photo {
+      .work__back {
         height: 238px;
         width: 231px; } }
+    .work__back--projetos {
+      background-image: url(../assets/img/projetos.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px; }
+    .work__back--retrofit {
+      background-image: url(../assets/img/retrofit.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px; }
+    .work__back--reforma {
+      background-image: url(../assets/img/reforma.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px; }
+    .work__back--laudos {
+      background-image: url(../assets/img/laudos.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px; }
+    .work__back--consultoria {
+      background-image: url(../assets/img/consultoria.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px; }
+  .work__list {
+    padding-bottom: 100px; }
   .work__tex {
     text-align: center;
     font-family: "Domine", sans-serif;
@@ -278,50 +301,47 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 46px;
-    color: #FFFFFF;
-    position: absolute;
-    top: 40%;
-    right: 15%; }
+    color: black; }
     @media (max-width: 780px) {
       .work__tex {
-        font-size: 20px;
-        line-height: 23px; } }
-  .work__texts {
-    text-align: center;
-    font-family: "Domine", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 46px;
-    color: #FFFFFF;
-    position: absolute;
-    position: absolute;
-    top: 40%;
-    right: 0; }
-    @media (max-width: 780px) {
-      .work__texts {
         font-size: 20px;
         line-height: 23px; } }
 
 .js-carousel--dual-prev, .js-carousel--dual-next {
   display: none; }
 
+.glider-dot.active {
+  background-color: #046ED0; }
+
 .client {
   background-color: #2A2E49;
   min-height: 100vh;
   margin: auto;
-  position: relative; }
+  position: relative;
+  overflow-x: clip; }
+  @media (max-width: 780px) {
+    .client {
+      min-height: 60vh; } }
   .client::before {
     background-color: #2A2E49;
     content: '';
     background-position: bottom;
     position: absolute;
-    bottom: -299px;
+    bottom: -250px;
     left: -145px;
     height: 52vh;
     width: 120%;
     transform: rotate(16deg);
     z-index: 1; }
+    @media (min-width: 780px) and (max-width: 1200px) {
+      .client::before {
+        width: 150%; } }
+    @media (max-width: 780px) {
+      .client::before {
+        bottom: -116px;
+        left: 0;
+        height: 25vh;
+        width: 113%; } }
   .client__title {
     font-weight: 700;
     font-size: 60px;
@@ -398,7 +418,11 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  padding-top: 400px; }
+  padding-top: 200px; }
+  @media (max-width: 780px) {
+    .schedule {
+      background-position: -55px 200px;
+      min-height: 100vh; } }
   .schedule__heading {
     max-width: 1440px;
     font-family: "Raleway", sans-serif;
@@ -410,8 +434,8 @@
     text-align: center; }
     @media (max-width: 780px) {
       .schedule__heading {
-        font-size: 24px;
-        line-height: 28px; } }
+        font-size: 35px;
+        line-height: 45px; } }
   .schedule__bta {
     background: #046ED0;
     display: flex;
@@ -430,8 +454,8 @@
     color: #FFFFFF; }
     @media (max-width: 780px) {
       .schedule__bta {
-        font-size: 9px;
-        line-height: 10px; } }
+        font-size: 15px;
+        line-height: 15px; } }
     .schedule__bta:hover {
       opacity: 0.7;
       transition: 0.3s; }
@@ -465,10 +489,6 @@
     line-height: 28px;
     padding-bottom: 50px;
     color: #FFFFFF; }
-    @media (max-width: 780px) {
-      .contacts__headtitle {
-        font-size: 20px;
-        line-height: 24px; } }
   .contacts__roll {
     margin-bottom: 60px;
     font-family: "Domine", sans-serif;
@@ -476,10 +496,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px; }
-    @media (max-width: 780px) {
-      .contacts__roll {
-        font-size: 15px;
-        line-height: 17px; } }
   .contacts__list {
     text-decoration: none;
     list-style: none;

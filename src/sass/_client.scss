@@ -3,19 +3,35 @@
   min-height: 100vh;
   margin: auto;
   position: relative;
-  
+  overflow-x: clip;
 
+  @media (max-width: 780px){
+    min-height: 60vh;
+  }
+  
   &::before{
     background-color: $rockcolor;
     content: '';
     background-position: bottom;
     position: absolute;
-    bottom: -299px;
+    bottom: -250px;
     left: -145px;
     height: 52vh;
     width: 120%;
     transform: rotate(16deg);
     z-index: 1;
+
+    @media (min-width:780px) and (max-width:1200px){
+      width: 150%;
+ 
+    }
+    
+    @media (max-width: 780px){
+      bottom: -116px;
+      left: 0;
+      height: 25vh;
+      width: 113%;
+    }
   }
 
   &__title{

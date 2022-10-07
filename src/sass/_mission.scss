@@ -1,27 +1,45 @@
 .mission{
-  min-height: 100vh;
-  max-width: 1440px;
-  padding: 0 80px;
+  min-height: 150vh;
   margin: auto;
   position: relative;
-  overflow: hidden;
+  overflow-x: clip;
+  background-color: $rockcolor;
+  z-index: 1;
 
   &::before{
     background-color: $rockcolor;
     content: '';
     background-position: bottom;
     position: absolute;
-    height: 100vh;
+    height: 20vh;
+    top: -110px;
     left: 0;
     width: 120%;
-    transform: rotate(-5deg);
-    z-index: -1;
+    transform: rotate(-6deg);
+    z-index: 0;
   }
 
-  &__slider{
+  &::after{
+    background-color: $rockcolor;
+    content: '';
+    background-position: bottom;
+    position: absolute;
+    height: 20vh;
+    bottom: -90px;
+    left: -60px;
+    right: 0;
+    width: 120%;
+    transform: rotate(-6deg);
+    z-index: 0;
+  }
+
+  &__legacy{
     display: flex;
     flex-direction: column;
-    padding-top: 5%;
+    padding-top: 100px;
+    max-width: 1440px;
+    padding: 0 80px;
+    z-index: 4;
   }
 
   &__text{
@@ -32,7 +50,7 @@
     line-height: 70px;
     text-align: center;
     color: $primarycolor;
-    padding-top: 5%;
+    padding-top: 200px;
   }
 
   &__message {
@@ -43,26 +61,8 @@
     line-height: 47px;
     text-align: center;
     color: $primarycolor;
-    padding-top: 3%;
-  }
-}
-
-.js-carousel--text-prev, .js-carousel--text-next{
-  display: none;
-}
-
-.js-carousel--text-dots{
-  color: $primarycolor;
-}
-
-.glider-dot{
-  z-index: 3;
-  width: 24px;
-  height: 24px;
-  background: #585868;
-  color: $primarycolor;
-  @media (max-width: 780px){
-    width: 12px;
-    height: 12px;
+    padding: 50px 85px;
+    z-index: 1;
+    
   }
 }

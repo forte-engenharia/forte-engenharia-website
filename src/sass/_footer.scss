@@ -33,10 +33,6 @@
       line-height: 28px;
       padding-bottom: 50px;
       color: $primarycolor;
-      @media (max-width: 780px) {
-        font-size: 20px;
-        line-height: 24px;
-      }
   }
 
   &__roll{
@@ -46,12 +42,6 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 21px;
-
-      @media (max-width: 780px) {
-        font-size: 15px;
-        line-height: 17px;
-      }
-
     }
 
     &__list{

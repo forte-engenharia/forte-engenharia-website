@@ -5,6 +5,10 @@
   margin: auto;
   position: relative;
 
+  @media (max-width: 780px) {
+    min-height: 60vh;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 72px;
@@ -21,26 +25,9 @@
   }
 
   &__back {
-    border-radius: 15px;
-    text-decoration: none;
-    position: relative;
-  }
-
-  &__back:not(:hover) {
-    background-color: $backrockcolor;
-    height: 99%;
-  }
-
-  &__list {
-    display: flex;
-    padding-bottom: 100px;
-  }
-
-  &__photo {
-    height: 338px;
-    width: 332px;
     border-radius: 20px;
-    mix-blend-mode: luminosity;
+    
+
     @media (max-width: 780px){
       height: 169px;
       width:161px;
@@ -51,6 +38,50 @@
       height: 238px;
       width: 231px;
     }
+
+    &--projetos{
+      background-image: url(../assets/img/projetos.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px;
+    }
+
+    &--retrofit{
+      background-image: url(../assets/img/retrofit.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px;
+    }
+
+    &--reforma{
+      background-image: url(../assets/img/reforma.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px;
+    }
+
+    &--laudos{
+      background-image: url(../assets/img/laudos.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px;
+    }
+
+    &--consultoria{
+      background-image: url(../assets/img/consultoria.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 338px;
+      width: 332px;
+    }
+  }
+
+  &__list {
+    padding-bottom: 100px;
   }
 
   &__tex{
@@ -60,28 +91,8 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 46px;
-    color: $primarycolor;
-    position: absolute;
-    top: 40%;
-    right: 15%;
-    @media (max-width: 780px){
-      font-size: 20px;
-      line-height: 23px;
-    }
-  }
-
-  &__texts{
-    text-align: center;
-    font-family: $textdom;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 46px;
-    color: $primarycolor;
-    position: absolute;
-    position: absolute;
-    top: 40%;
-    right: 0;
+    color: black;
+    
     @media (max-width: 780px){
       font-size: 20px;
       line-height: 23px;
@@ -91,4 +102,8 @@
 
 .js-carousel--dual-prev, .js-carousel--dual-next{
   display: none;
+}
+
+.glider-dot.active{
+  background-color: #046ED0;
 }

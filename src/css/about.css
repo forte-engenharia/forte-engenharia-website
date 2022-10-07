@@ -114,15 +114,16 @@
   transform: rotate(45deg) translate(-5px, -7px); }
 
 .talks {
-  background-image: url(/assets/img/capa.quem_somos.png);
+  background-image: url(../assets/img/capa.quem_somos.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   min-height: 100vh;
   padding: 0 80px;
-  position: relative;
-  overflow: hidden; }
+  position: relative; }
   .talks::after {
     background-color: #3C64A3;
     content: '';
@@ -131,42 +132,47 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: 1; }
+    z-index: 0; }
   .talks::before {
     background-color: #FFFFFF;
     content: '';
-    left: 0;
-    bottom: -50px;
+    left: 210px;
+    bottom: -200px;
     position: absolute;
-    min-width: 170%;
-    height: 20vh;
-    transform: rotate(-4deg);
-    z-index: -1; }
+    min-width: 68vw;
+    min-height: 40vh;
+    z-index: 0; }
   .talks__are {
-    max-width: 1440px;
-    margin: auto;
     position: relative;
-    z-index: 3;
-    display: flex;
-    flex-direction: column; }
-    @media (max-width: 780px) {
-      .talks__are {
-        text-align: left;
-        align-items: flex-start; } }
+    width: 65vw;
+    height: 18vh;
+    text-align: start;
+    z-index: 1; }
+  .talks__say {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    min-width: 65vw;
+    padding-top: 30px; }
   .talks__title {
-    width: 90vw;
+    width: 40vw;
     font-family: "Raleway", sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 76px;
     line-height: 106px;
     font-weight: 700;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 200px; }
 
 .team {
   min-height: 100vh;
-  padding: 0 50px;
+  padding: 0 80px;
   max-width: 1440px;
-  margin: auto; }
+  margin: 0; }
   .team__heading {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -234,7 +240,8 @@
   max-width: 1440px;
   padding: 0 80px;
   margin: auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .journey__title {
     font-weight: 700;
     font-size: 72px;
@@ -243,28 +250,72 @@
     text-align: center;
     color: #2A2E49;
     padding-bottom: 70px; }
+  .journey__slider {
+    display: flex; }
+  .journey__date {
+    padding: 50px 80px; }
+  .journey__time {
+    background: rgba(4, 110, 208, 0.2);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 88px;
+    font-family: "Domine", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 48px; }
+  .journey__frame {
+    width: 300px;
+    height: 150px;
+    margin-top: 50px; }
+  .journey__but {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    padding-top: 50px; }
 
 .mission {
-  min-height: 100vh;
-  max-width: 1440px;
-  padding: 0 80px;
+  min-height: 150vh;
   margin: auto;
   position: relative;
-  overflow: hidden; }
+  overflow-x: clip;
+  background-color: #2A2E49;
+  z-index: 1; }
   .mission::before {
     background-color: #2A2E49;
     content: '';
     background-position: bottom;
     position: absolute;
-    height: 100vh;
+    height: 20vh;
+    top: -110px;
     left: 0;
     width: 120%;
-    transform: rotate(-5deg);
-    z-index: -1; }
-  .mission__slider {
+    transform: rotate(-6deg);
+    z-index: 0; }
+  .mission::after {
+    background-color: #2A2E49;
+    content: '';
+    background-position: bottom;
+    position: absolute;
+    height: 20vh;
+    bottom: -90px;
+    left: -60px;
+    right: 0;
+    width: 120%;
+    transform: rotate(-6deg);
+    z-index: 0; }
+  .mission__legacy {
     display: flex;
     flex-direction: column;
-    padding-top: 5%; }
+    padding-top: 100px;
+    max-width: 1440px;
+    padding: 0 80px;
+    z-index: 4; }
   .mission__text {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -273,7 +324,7 @@
     line-height: 70px;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 5%; }
+    padding-top: 200px; }
   .mission__message {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -282,24 +333,8 @@
     line-height: 47px;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 3%; }
-
-.js-carousel--text-prev, .js-carousel--text-next {
-  display: none; }
-
-.js-carousel--text-dots {
-  color: #FFFFFF; }
-
-.glider-dot {
-  z-index: 3;
-  width: 24px;
-  height: 24px;
-  background: #585868;
-  color: #FFFFFF; }
-  @media (max-width: 780px) {
-    .glider-dot {
-      width: 12px;
-      height: 12px; } }
+    padding: 50px 85px;
+    z-index: 1; }
 
 .schedule {
   background-image: url(../assets/img/logo_conversa.png);
@@ -313,7 +348,11 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  padding-top: 400px; }
+  padding-top: 200px; }
+  @media (max-width: 780px) {
+    .schedule {
+      background-position: -55px 200px;
+      min-height: 100vh; } }
   .schedule__heading {
     max-width: 1440px;
     font-family: "Raleway", sans-serif;
@@ -325,8 +364,8 @@
     text-align: center; }
     @media (max-width: 780px) {
       .schedule__heading {
-        font-size: 24px;
-        line-height: 28px; } }
+        font-size: 35px;
+        line-height: 45px; } }
   .schedule__bta {
     background: #046ED0;
     display: flex;
@@ -345,8 +384,8 @@
     color: #FFFFFF; }
     @media (max-width: 780px) {
       .schedule__bta {
-        font-size: 9px;
-        line-height: 10px; } }
+        font-size: 15px;
+        line-height: 15px; } }
     .schedule__bta:hover {
       opacity: 0.7;
       transition: 0.3s; }
@@ -380,10 +419,6 @@
     line-height: 28px;
     padding-bottom: 50px;
     color: #FFFFFF; }
-    @media (max-width: 780px) {
-      .contacts__headtitle {
-        font-size: 20px;
-        line-height: 24px; } }
   .contacts__roll {
     margin-bottom: 60px;
     font-family: "Domine", sans-serif;
@@ -391,10 +426,6 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px; }
-    @media (max-width: 780px) {
-      .contacts__roll {
-        font-size: 15px;
-        line-height: 17px; } }
   .contacts__list {
     text-decoration: none;
     list-style: none;
