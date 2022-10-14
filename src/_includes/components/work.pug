@@ -2,21 +2,16 @@ section.work
   h2.work__title
     strong Nossos Serviços
   .work__services.js-carousel--dual
-    .work__list
-      a.work__back--projetos(href='/services.pug') 
-        h5.work__tex PROJETOS
-    .work__list
-      a.work__back--retrofit(href='/services.pug')
-        h5.work__tex RETROFIT
-    .work__list
-      a.work__back--reforma(href='/services.pug')
-        h5.work__tex REFORMA
-    .work__list
-      a.work__back--laudos(href='/services.pug')
-        h5.work__tex LAUDOS DE INSPEÇÃO PREDIAL
-    .work__list
-      a.work__back--consultoria(href='/services.pug')
-        h5.work__tex CONSULTORIA PARA SÍNDICOS
+    a.work__back.projetos(href='/services') 
+      h5.work__tex PROJETOS
+    a.work__back.retrofit(href='/services')
+      h5.work__tex RETROFIT
+    a.work__back.reforma(href='/services')
+      h5.work__tex REFORMA
+    a.work__back.laudos(href='/services')
+      h5.work__tex LAUDOS DE INSPEÇÃO PREDIAL
+    a.work__back.consultoria(href='/services')
+      h5.work__tex CONSULTORIA PARA SÍNDICOS
   button.js-carousel--dual-prev(aria-label='Anterior')
   button.js-carousel--dual-next(aria-label='Próximo')
   .js-carousel--dual-dots(role='tablist')

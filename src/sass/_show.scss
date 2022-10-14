@@ -27,25 +27,28 @@
 
   &__same{
     background-color: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 550px;
     height: 650px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
   }
+
 
   &__pic{
     width: 550px;
     height: 479px;
-    z-index: 1;
+    mix-blend-mode: luminosity;
 
 
-    &::before {
-      background: rgba(42, 46, 73, 0.7);
+    &::after {
+      background-color: $colorbackser;
+      box-shadow: $colorbox;
       content: '';
+      mix-blend-mode: overlay;
       left: 0;
       position: absolute;
       height: 100%;
       width: 100%;
-      z-index: 2;
     }
   }
 
@@ -55,19 +58,25 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 27px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+    filter: drop-shadow($colorbox);
+    margin: 20px;
   }
 
   &__btn{
     background-color: $primarycolor;
     border: 2px solid #046ED0;
+    color: black;
     cursor: pointer;
-
+    text-decoration: none;
+    text-align: center;
+    
     font-family: $textdom;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 2px;
   }
 
 }

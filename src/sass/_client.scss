@@ -14,11 +14,11 @@
     content: '';
     background-position: bottom;
     position: absolute;
-    bottom: -250px;
+    bottom: -120px;
     left: -145px;
-    height: 52vh;
+    height: 40vh;
     width: 120%;
-    transform: rotate(16deg);
+    transform: rotate(10deg);
     z-index: 1;
 
     @media (min-width:780px) and (max-width:1200px){

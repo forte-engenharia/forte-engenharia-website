@@ -138,10 +138,10 @@
     left: 0;
     bottom: -50px;
     position: absolute;
-    min-width: 170%;
-    height: 20vh;
+    min-width: 110%;
+    height: 15vh;
     transform: rotate(-4deg);
-    z-index: -1; }
+    z-index: 1; }
   .heros__blocks {
     max-width: 1440px;
     margin: auto;
@@ -186,37 +186,43 @@
     margin: auto; }
   .show__same {
     background-color: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 550px;
-    height: 650px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+    height: 650px; }
   .show__pic {
     width: 550px;
     height: 479px;
-    z-index: 1; }
-    .show__pic::before {
-      background: rgba(42, 46, 73, 0.7);
+    mix-blend-mode: luminosity; }
+    .show__pic::after {
+      background-color: rgba(42, 46, 73, 0.7);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       content: '';
+      mix-blend-mode: overlay;
       left: 0;
       position: absolute;
       height: 100%;
-      width: 100%;
-      z-index: 2; }
+      width: 100%; }
   .show__subtitle {
     font-family: "Domine", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 27px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 20px; }
   .show__btn {
     background-color: #FFFFFF;
     border: 2px solid #046ED0;
+    color: black;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
     font-family: "Domine", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 18px; }
+    font-size: 14px;
+    line-height: 16px;
+    padding: 2px; }
 
 .contacts {
   background-color: #2A2E49;
