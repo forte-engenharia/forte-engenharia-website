@@ -6,6 +6,7 @@ new Glider($workCarousel,{
   slidesToShow:2,
   slidesToScroll:2,
   scrollLock: true,
+  dragVelocity: 2,
   draggable:true,
   dots:'.js-carousel--dual-dots',
   arrows: {
@@ -43,24 +44,6 @@ new Glider($simpleCarousel,{
   arrows:{
     prev:".js-carousel--simple-prev",
     next:".js-carousel--simple-next",
-  },
-  scrollLock: true,
-});
-
-
-//journey slider
-
-const $journeyCarousel = document.querySelector('js-carousel--story')
-
-new Glider($journeyCarousel,{
-  slidesToShow:3,
-  slidesToScroll:3,
-  draggable:true,
-  dragVelocity:2,
-  dots:'.js-carousel--story-dots',
-  arrows:{
-    prev:".js-carousel--story-prev",
-    next:".js-carousel--story-next",
   },
   scrollLock: true,
 });

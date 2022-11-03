@@ -64,11 +64,11 @@
     border-radius: 2px;
     display: block;
     padding: 12px;
-    opacity: 0.8; }
+    opacity: 0.7; }
     .header__link--cta:hover {
       opacity: 1; }
   .header__link {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none; }
     .header__link:hover {
       opacity: .85; }
@@ -88,7 +88,7 @@
   .header__menu-line {
     width: 32px;
     height: 2px;
-    background: #FFF;
+    background: #FFFFFF;
     box-shadow: 0px 0px 2.5px rgba(0, 0, 0, 0.8);
     margin: 8px;
     transition: 0.3s; }
@@ -174,10 +174,10 @@
 
 .features {
   background: #FFFFFF;
-  min-height: 80vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin: 200px 0; }
   .features__delivery {
     display: flex;
     flex-direction: row;
@@ -231,14 +231,14 @@
         line-height: 20px; } }
 
 .work {
-  min-height: 100vh;
   max-width: 1440px;
   padding: 0 80px;
-  margin: auto;
-  position: relative; }
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 300px; }
   @media (max-width: 780px) {
     .work {
-      min-height: 60vh; } }
+      padding: 0 20px; } }
   .work__title {
     font-weight: 700;
     font-size: 72px;
@@ -252,94 +252,63 @@
         font-size: 36px;
         line-height: 42px; } }
   .work__back {
-    margin-bottom: 50px; }
+    height: 400px !important;
+    border-radius: 20px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; }
     @media (max-width: 780px) {
       .work__back {
-        height: 169px;
-        width: 161px;
-        border-radius: 10px; } }
-    @media (max-width: 1180px) and (min-width: 780px) {
-      .work__back {
-        height: 238px;
-        width: 231px; } }
-    .work__back.projetos {
-      background-image: url(../assets/img/projetos.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 415px !important;
-      border-radius: 20px;
-      margin-right: 30px;
-      mix-blend-mode: luminosity;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .work__back.retrofit {
-      background-image: url(../assets/img/retrofit.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 338px;
-      border-radius: 20px;
-      margin-right: 30px;
-      mix-blend-mode: luminosity;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .work__back.reforma {
-      background-image: url(../assets/img/reforma.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 338px;
-      border-radius: 20px;
-      margin-right: 30px;
-      mix-blend-mode: luminosity;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .work__back.laudos {
-      background-image: url(../assets/img/laudos.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 338px;
-      border-radius: 20px;
-      margin-right: 30px;
-      mix-blend-mode: luminosity;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .work__back.consultoria {
-      background-image: url(../assets/img/consultoria.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 338px;
-      border-radius: 20px;
-      margin-right: 30px;
-      mix-blend-mode: luminosity;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-  .work__tex {
+        height: 350px !important;
+        width: 300px !important; } }
+    .work__back:not(:hover)::after {
+      background-color: rgba(42, 46, 73, 0.7); }
+    .work__back::after {
+      background-color: transparent;
+      content: '';
+      left: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+      transition: background-color linear .25s; }
+    .work__back--projetos {
+      background-image: url(../assets/img/projetos.png); }
+    .work__back--retrofit {
+      background-image: url(../assets/img/retrofit.png); }
+    .work__back--reforma {
+      background-image: url(../assets/img/reforma.png); }
+    .work__back--laudos {
+      background-image: url(../assets/img/laudos.png); }
+    .work__back--consultoria {
+      background-image: url(../assets/img/consultoria.png); }
+  .work__text {
     text-align: center;
     font-family: "Domine", sans-serif;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 46px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    position: relative;
+    z-index: 98; }
     @media (max-width: 780px) {
-      .work__tex {
+      .work__text {
         font-size: 20px;
         line-height: 23px; } }
-
-.js-carousel--dual-prev, .js-carousel--dual-next {
-  display: none; }
-
-.glider-dot.active {
-  background-color: #046ED0; }
+  .work .glider-dot.active {
+    background-color: #046ED0; }
 
 .client {
   background-color: #2A2E49;
   min-height: 100vh;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
   overflow-x: clip; }
   @media (max-width: 780px) {
@@ -350,8 +319,8 @@
     content: '';
     background-position: bottom;
     position: absolute;
-    bottom: -120px;
-    left: -145px;
+    bottom: -150px;
+    left: -100px;
     height: 40vh;
     width: 120%;
     transform: rotate(10deg);
@@ -411,23 +380,8 @@
       .client__par {
         font-size: 16px;
         line-height: 19px; } }
-
-.js-carousel--simple-prev, .js-carousel--simple-next {
-  display: none; }
-
-.js-carousel--simple-dots {
-  color: #FFFFFF; }
-
-.glider-dot {
-  z-index: 1;
-  width: 24px;
-  height: 24px;
-  background: #585868;
-  color: #FFFFFF; }
-  @media (max-width: 780px) {
-    .glider-dot {
-      width: 12px;
-      height: 12px; } }
+  .client .glider-dot.active {
+    background-color: #FFFFFF; }
 
 .schedule {
   background-image: url(../assets/img/logo_conversa.png);
@@ -444,7 +398,7 @@
   padding-top: 200px; }
   @media (max-width: 780px) {
     .schedule {
-      background-position: -55px 200px;
+      background-position: 0 200px;
       min-height: 100vh; } }
   .schedule__heading {
     max-width: 1440px;
@@ -485,9 +439,8 @@
 
 .contacts {
   background-color: #2A2E49;
-  min-height: 60vh;
-  padding: 80px 60px;
-  margin: auto;
+  padding: 140px 60px;
+  margin: 0 auto;
   position: relative;
   display: flex; }
   .contacts__logo {
@@ -508,7 +461,7 @@
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 28px;
     padding-bottom: 50px;
     color: #FFFFFF; }
@@ -528,14 +481,30 @@
     text-decoration: none;
     color: #FFFFFF;
     transition: 0.3s;
-    display: flex;
-    align-items: center; }
+    display: inline; }
     .contacts__link:hover {
       opacity: 0.6;
       transition: 0.3s; }
   .contacts__frame {
     float: left;
     margin-right: 20px; }
+
+.js-carousel--simple-prev, .js-carousel--simple-next {
+  display: none; }
+
+.js-carousel--simple-dots {
+  color: #FFFFFF; }
+
+.glider-dot {
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  background: #585868;
+  color: #FFFFFF; }
+  @media (max-width: 780px) {
+    .glider-dot {
+      width: 20px;
+      height: 20px; } }
 
 * {
   margin: 0;

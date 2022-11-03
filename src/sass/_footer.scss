@@ -1,8 +1,7 @@
 .contacts{
   background-color: $rockcolor;
-  min-height: 60vh;
-  padding: 80px 60px;
-  margin: auto;
+  padding: 140px 60px;
+  margin: 0 auto;
   position: relative;
   display: flex;
 
@@ -29,7 +28,7 @@
       font-family: $textrel;
       font-style: normal;
       font-weight: 700;
-      font-size: 24px;
+      font-size: 30px;
       line-height: 28px;
       padding-bottom: 50px;
       color: $primarycolor;
@@ -55,8 +54,8 @@
     text-decoration: none;
     color: $primarycolor;
     transition: 0.3s;
-    display: flex;
-    align-items: center;
+    display: inline;
+
     &:hover {
         opacity: 0.6;
         transition: 0.3s;
@@ -67,5 +66,4 @@
       float: left;
       margin-right: 20px;
     }
-
 }

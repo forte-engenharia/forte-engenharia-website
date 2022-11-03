@@ -30,6 +30,11 @@
     height: 15vh;
     transform: rotate(-4deg);
     z-index: 1;
+    
+    @media (min-width: 1600px) {
+      bottom: -200px;
+      height: 30vh;
+    }
 
   }
 
@@ -38,7 +43,7 @@
     max-width: 1440px;
     margin: auto;
     position: relative;
-    z-index: 3;
+    z-index: 1;
     display: flex;
     text-align: center;
     align-items: center;

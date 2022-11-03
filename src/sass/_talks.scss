@@ -4,7 +4,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 0 80px;
@@ -20,50 +20,22 @@
     width: 100%;
     z-index: 0;
   }
-
-  &::before {
-    background-color: $primarycolor;
-    content: '';
-    left: 210px;
-    bottom: -200px;
-    position: absolute;
-    min-width: 68vw;
-    min-height: 40vh;
-    z-index: 0;
-  }
-
-  &__are{
-    position: relative;
-    width: 65vw;
-    height: 18vh;
-    text-align: start;
-    z-index: 1;
-  }
-
-  &__say{
-    font-family: $textrel;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 40px;
-    min-width: 65vw;
-    padding-top: 30px;
- 
-  }
   
-
   &__title{
-    width: 40vw;
+    width: max-content;
     font-family: $textrel;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 76px;
     line-height: 106px;
-    font-weight: 700;
+    font-weight: 500;
     color: $primarycolor;
     text-align: center;
     z-index: 1;
-    padding-bottom: 200px;
+
+    @media (max-width: 780px) {
+      font-size: 65px;
+    }
     
   }
-
 }
+

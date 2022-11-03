@@ -1,36 +1,39 @@
 .mission{
-  min-height: 150vh;
-  margin: auto;
+  min-height: 100vh;
   position: relative;
   overflow-x: clip;
   background-color: $rockcolor;
   z-index: 1;
 
+  &::after{
+    background-color: $rockcolor;
+    content: '';
+    background-position: top;
+    position: absolute;
+    height: 30vh;
+    top: -150px;
+    left: -100px;
+    width: 120%;
+    transform: rotate(-8deg);
+    z-index: -1;
+
+    @media (max-width: 880px){
+      width: 150%;
+    }
+  }
+  
   &::before{
     background-color: $rockcolor;
     content: '';
     background-position: bottom;
     position: absolute;
-    height: 20vh;
-    top: -110px;
-    left: 0;
-    width: 120%;
-    transform: rotate(-6deg);
-    z-index: 0;
-  }
-
-  &::after{
-    background-color: $rockcolor;
-    content: '';
-    background-position: bottom;
-    position: absolute;
-    height: 20vh;
-    bottom: -90px;
-    left: -60px;
+    height: 40vh;
+    bottom: -200px;
+    left: -100px;
     right: 0;
     width: 120%;
-    transform: rotate(-6deg);
-    z-index: 0;
+    transform: rotate(-8deg);
+    z-index: -1;
   }
 
   &__legacy{
@@ -40,6 +43,9 @@
     max-width: 1440px;
     padding: 0 80px;
     z-index: 4;
+
+    padding: 0 80px;
+    margin: 0 auto;
   }
 
   &__text{
@@ -50,7 +56,12 @@
     line-height: 70px;
     text-align: center;
     color: $primarycolor;
-    padding-top: 200px;
+    padding-top: 20px;
+
+    @media (max-width: 880px){
+      font-size: 50px;
+      line-height: 60px;
+    }
   }
 
   &__message {
@@ -61,8 +72,14 @@
     line-height: 47px;
     text-align: center;
     color: $primarycolor;
-    padding: 50px 85px;
+    padding: 50px 85px 110px 85px;
     z-index: 1;
+    
+    @media (max-width: 880px){
+      font-size: 30px;
+      line-height: 37px;
+      padding: 35px 10px;
+    }
     
   }
 }

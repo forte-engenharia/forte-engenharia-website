@@ -1,0 +1,20 @@
+.js-carousel--simple-prev, .js-carousel--simple-next{
+  display: none;
+}
+
+.js-carousel--simple-dots{
+  color: $primarycolor;
+}
+
+.glider-dot{
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  background: #585868;
+  color: $primarycolor;
+  
+  @media (max-width: 780px){
+    width: 20px;
+    height: 20px;
+  }
+}

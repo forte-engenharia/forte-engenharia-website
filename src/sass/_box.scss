@@ -1,0 +1,17 @@
+.box {
+  position: relative;
+  max-width: 1100px;
+  text-align: start;
+  z-index: 4;
+  background-color: $primarycolor;
+  margin: -200px auto 200px;
+  padding: 40px;
+  
+  &__say{
+    font-family: $textrel;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}

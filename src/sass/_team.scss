@@ -1,8 +1,11 @@
 .team{
-  min-height: 100vh;
-  padding: 0 80px;
-  max-width: 1440px;
-  margin: 0;
+  margin-bottom: 200px;
+  
+  &__space{
+    padding: 0 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 
   &__heading{
     font-family: $textrel;
@@ -12,11 +15,11 @@
     line-height: 85px;
     text-align: center;
     color: $rockcolor;
-    padding-top: 200px;
+    padding-bottom: 100px;
 
     @media (max-width: 880px) {
       font-family: $textrel;
-      font-size: 35px;
+      font-size: 45px;
       font-weight: 700;
       line-height: 45px;
     }
@@ -27,7 +30,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding-top: 50px;
+    flex: 1 1 0px;
 
     @media (max-width: 880px) {
       flex-direction: column;
@@ -47,7 +50,7 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 40px;
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     
     @media (max-width: 880px) {
@@ -56,8 +59,6 @@
       font-weight: 700;
       line-height: 20px;
     }
-
-    
   }
 
   &__special{
@@ -67,14 +68,14 @@
     font-size: 30px;
     line-height: 32px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 
     @media (max-width: 880px) {
       font-family: $textrel;
       font-size: 21px;
       font-weight: 500;
       line-height: 28px;
-      padding: 20px 0;
+      padding: 40px 0;
     }
   }
 
