@@ -114,7 +114,7 @@
   transform: rotate(45deg) translate(-5px, -7px); }
 
 .hero {
-  background-image: url(/assets/img/capa.home.png);
+  background-image: url(../assets/img/capa.home.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -255,6 +255,7 @@
     height: 400px !important;
     border-radius: 20px;
     margin-right: 40px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,7 +490,7 @@
     float: left;
     margin-right: 20px; }
 
-.js-carousel--simple-prev, .js-carousel--simple-next {
+.js-carousel--simple-prev, .js-carousel--simple-next, .js-carousel--dual-prev, .js-carousel--dual-next {
   display: none; }
 
 .js-carousel--simple-dots {

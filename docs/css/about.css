@@ -294,7 +294,7 @@
   .journey .glider-dot.active {
     background-color: #046ED0; }
 
-.js-carousel--simple-prev, .js-carousel--simple-next {
+.js-carousel--simple-prev, .js-carousel--simple-next, .js-carousel--dual-prev, .js-carousel--dual-next {
   display: none; }
 
 .js-carousel--simple-dots {
