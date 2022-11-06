@@ -8,10 +8,10 @@ header.header
       .line3.header__menu-line
     ul.header__list.nav-list
       li.header__item
-        a.header__link(href='/' class="#{ current.source == 'index' ? 'is-active' : '' }") Home
+        a.header__link(href='/') Home
       li.header__item
-        a.header__link(href='{{ '/about/' | url }}' class="#{ current.source == 'about' ? 'is-active' : '' }") Quem somos
+        a.header__link(href='/about') Quem somos
       li.header__item
-        a.header__link(href='{{ '/services/' | url }}' class="#{ current.source == 'services' ? 'is-active' : '' }") Serviços
+        a.header__link(href='/services') Serviços
       li.header__item
         a.header__link.header__link--cta(href='https://wa.me/5565981369818') Contato
