@@ -4,10 +4,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/js");
   eleventyConfig.addPassthroughCopy("./src/assets");
   return {
+    pathPrefix: "/",
     dir: {
       input: "src",
       output: "docs",
-      pathPrefix: "forte-engenharia.github.io/"
     },
   };
 };
