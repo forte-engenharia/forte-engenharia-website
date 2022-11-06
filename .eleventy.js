@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: "src",
       output: "docs",
+      pathPrefix: "/forte-engenharia.github.io/"
     },
   };
 };
