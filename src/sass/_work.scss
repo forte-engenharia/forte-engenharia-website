@@ -1,12 +1,11 @@
 .work{
-  max-width: 1440px;
   padding: 0 80px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 300px;
 
   @media (max-width: 780px){
-    padding: 0 20px;
+    padding: 0 0 0 20px;
   }
 
   &__title {
@@ -27,7 +26,7 @@
   &__back {
     height: 400px !important;
     border-radius: 20px;
-    margin-right: 40px;
+    margin-right: 35px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -37,8 +36,12 @@
     position: relative;
     overflow: hidden;
 
-    @media (max-width: 780px){
-      height: 350px !important;
+    @media (min-width:1600px){
+      height: 700px !important;
+    }
+
+    @media (max-width: 690px){
+      height: 250px !important;
       width: 300px !important;
     }
 
@@ -100,3 +103,4 @@
     background-color: $bluecolor;
   }
 }
+

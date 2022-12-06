@@ -5,6 +5,10 @@
   position: relative;
   margin-bottom: 300px;
 
+  @media (max-width:780px){
+    padding: 0 20px;
+  }
+
   &__title{
     font-weight: 700;
     font-size: 72px;
