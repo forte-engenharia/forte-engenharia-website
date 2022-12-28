@@ -44,14 +44,19 @@
 
   &__legacy{
     display: flex;
+    align-items: center;;
     flex-direction: column;
     padding-top: 100px;
     max-width: 1440px;
     padding: 0 80px;
     z-index: 4;
-
     padding: 0 80px;
     margin: 0 auto;
+  }
+
+  &__iconframe{
+    width: 124px;
+    height: 124px;
   }
 
   &__text{
@@ -85,7 +90,6 @@
       font-size: 25px;
       line-height: 30px;
       padding: 35px 10px;
-    }
-    
+    } 
   }
 }

@@ -82,7 +82,7 @@
       .header__mobile-menu {
         display: block;
         position: fixed;
-        right: 80px;
+        right: 10px;
         top: 30px;
         z-index: 111; } }
   .header__menu-line {
@@ -217,11 +217,10 @@
   .features__delivery {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-around;
     padding: 0 71px;
-    max-width: 1440px;
-    flex: 1 1 1; }
+    max-width: 1440px; }
     @media (max-width: 880px) {
       .features__delivery {
         flex-direction: column;
@@ -231,6 +230,9 @@
     display: flex;
     align-items: center;
     flex-direction: column; }
+    @media (min-width: 880px) {
+      .features__item {
+        width: 33.3%; } }
   .features__backicons {
     background-color: #046ED033;
     width: 124px;
@@ -241,7 +243,7 @@
     justify-content: center; }
     @media (max-width: 880px) {
       .features__backicons {
-        width: 64px;
+        width: 80px;
         height: 80px;
         border-radius: 20px; } }
     .features__backicons--simbols {
@@ -274,6 +276,8 @@
   @media (max-width: 780px) {
     .work {
       padding: 0 0 0 20px; } }
+  .work__services {
+    overflow: hidden; }
   .work__title {
     font-weight: 700;
     font-size: 72px;
@@ -387,7 +391,8 @@
         line-height: 35px; } }
   .client__list {
     color: #FFFFFF;
-    z-index: 1; }
+    z-index: 1;
+    overflow: hidden; }
   .client__building {
     text-align: center; }
   .client__headline {
@@ -396,7 +401,7 @@
     line-height: 48px;
     font-family: "Domine", sans-serif;
     text-align: center;
-    padding-top: 25px; }
+    padding-top: 45px; }
     @media (max-width: 780px) {
       .client__headline {
         font-size: 21px;
@@ -414,7 +419,7 @@
     line-height: 38px;
     font-family: "Raleway", sans-serif;
     text-align: center;
-    padding: 20px 0; }
+    padding: 20px 0 0; }
     @media (max-width: 780px) {
       .client__par {
         font-size: 16px;
@@ -506,7 +511,7 @@
     padding-bottom: 50px;
     color: #FFFFFF; }
   .contacts__roll {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
     font-family: "Domine", sans-serif;
     font-style: normal;
     font-weight: 400;
