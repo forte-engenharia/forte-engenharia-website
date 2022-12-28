@@ -41,7 +41,7 @@
     @media (max-width: 1050px) {
       position: fixed;
       padding: 0;
-      right: 80px;
+      right: 40px;
       flex-direction: column;
       align-items: flex-end;
       justify-content: space-around;
@@ -55,10 +55,10 @@
       height: 100vh;
       position: fixed;
       background-image: linear-gradient(to left, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%);
-      right: -80px;
+      right: -40px;
       top: -100px;
       z-index: -1;
-      width: 280px;
+      width: 100vw;
     }
   }
 
@@ -79,6 +79,7 @@
   &__link {
     color: $primarycolor;
     text-decoration: none;
+    text-shadow: 1px 1px rgba(0 ,0,0,0.9);
 
     &:hover {
       opacity: .70;
@@ -86,11 +87,20 @@
   }
 
   &__link--cta {
-    border: 3px solid $bluecolor;
+    border-width: 3px;
+    border-style: solid;
     border-radius: 2px;
     display: block;
     padding: 12px;
     opacity: 0.7;
+
+    @media (min-width: 1051px) {
+      border-color: $bluecolor;
+    }
+
+    @media (max-width: 1050px) {
+      border-color: $primarycolor;
+    }
 
     &:hover {
       opacity: 1;
@@ -132,7 +142,7 @@
 @keyframes navLinkFade {
   from{
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(5%);
   }
   to{
     opacity: 1;

@@ -7,15 +7,18 @@
 
   &__delivery {
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
     justify-content: space-around;
     padding: 0 71px;
     max-width: 1440px;
+    
+    @media (min-width: 881px) {
+      align-items: baseline;
+    }
 
     @media (max-width: 880px) {
       flex-direction: column;
       text-align: center;
+      align-items: center;
       gap:20px;
     }
   }
@@ -46,9 +49,11 @@
     }
     
     &--simbols{
-      height: 69px;
-      width: 50px;
-      
+      @media (min-width: 881px) {
+        height: 69px;
+        width: 50px;
+      }
+
       @media (max-width: 880px) {
         height: 50px;
         width: 35px;
