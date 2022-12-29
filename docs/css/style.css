@@ -462,6 +462,8 @@
       .client__par {
         font-size: 16px;
         line-height: 19px; } }
+  .client .glider-dots {
+    padding-top: 25px; }
   .client .glider-dot.active {
     background-color: #FFFFFF; }
 

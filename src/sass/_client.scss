@@ -66,7 +66,6 @@
 
   &__headline {
     font-weight: 400;
-
     font-family: $textdom;
     text-align: center;
     padding-top: 45px;
@@ -109,6 +108,10 @@
       font-size: 16px;
       line-height: 19px;
     }
+  }
+
+  .glider-dots{
+    padding-top: 25px;
   }
   
   .glider-dot.active{
