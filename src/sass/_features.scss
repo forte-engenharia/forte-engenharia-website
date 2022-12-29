@@ -35,12 +35,15 @@
 
   &__backicons{
     background-color: $lightblue;
-    width: 124px;
-    height: 124px;
-    border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: 881px) {
+      width: 124px;
+      height: 124px;
+      border-radius: 40px;
+    }
 
     @media (max-width: 880px) {
       width: 80px;
@@ -62,16 +65,18 @@
   }
 
   &__text{
-    padding: 20px;
     font-family: $textrel;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 28px;
     text-align: center;
+
+    @media (min-width: 881px) {
+      padding: 20px;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 28px;
+    }
 
     @media (max-width: 880px) {
       padding: 25px 0;
-      font-family: $textrel;
       font-size: 20px;
       font-weight: 500;
       line-height: 20px;

@@ -8,10 +8,13 @@
 
 .glider-dot{
   z-index: 1;
-  width: 24px;
-  height: 24px;
   background: #585868;
   color: $primarycolor;
+
+  @media (min-width: 781px){
+    width: 24px;
+    height: 24px;
+  }
   
   @media (max-width: 780px){
     width: 20px;

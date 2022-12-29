@@ -38,16 +38,18 @@
 
   }
 
-  
   &__blocks {
     max-width: 1440px;
     margin: auto;
     position: relative;
     z-index: 1;
     display: flex;
-    text-align: center;
-    align-items: center;
     flex-direction: column;
+
+    @media (min-width: 781px){
+      text-align: center;
+      align-items: center;
+    }
 
     @media (max-width: 780px) {
       text-align: left;
@@ -64,6 +66,4 @@
     font-weight: 700;
     color: $primarycolor;
   }
-
-
 }

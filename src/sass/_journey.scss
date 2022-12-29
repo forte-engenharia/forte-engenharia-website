@@ -1,28 +1,38 @@
 .journey{
   max-width: 1440px;
-  padding: 0 80px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 300px;
 
-  @media (max-width:780px){
+  @media (min-width: 781px) {
+    padding: 0 80px;
+  }
+
+  @media (max-width:780px) {
     padding: 0 20px;
   }
 
   &__title{
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 85px;
     font-family: $textrel;
     text-align: center;
     color: $rockcolor;
     padding-bottom: 70px;
+
+    @media (min-width: 781px) {
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 85px;
+    }
 
     @media (max-width: 780px) {
       font-size: 45px;
       font-weight: 700;
       line-height: 45px;
     }
+  }
+
+  &__slider{
+    overflow: hidden;
   }
 
   &__date{
@@ -38,14 +48,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
-    height: 100px;
-
     font-family: $textdom;
     font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 48px;
+    
+    @media (min-width: 781px) {
+      width: 250px;
+      height: 100px;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 48px;
+    }
 
     @media (max-width: 780px) {
       font-size: 28px;
@@ -66,9 +78,12 @@
     text-align: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
     padding: 50px 0;
+
+    @media (min-width: 781px){
+      font-size: 32px;
+      line-height: 38px;
+    }
 
     @media (max-width: 780px) {
       font-size: 28px;

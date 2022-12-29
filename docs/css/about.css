@@ -84,8 +84,10 @@
     border-bottom: 4px solid #046ED0;
     font-size: 24px; }
   .header__mobile-menu {
-    display: none;
     cursor: pointer; }
+    @media (min-width: 1051px) {
+      .header__mobile-menu {
+        display: none; } }
     @media (max-width: 1050px) {
       .header__mobile-menu {
         display: block;
@@ -145,12 +147,14 @@
     width: max-content;
     font-family: "Raleway", sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 76px;
     line-height: 106px;
     font-weight: 500;
     color: #FFFFFF;
     text-align: center;
     z-index: 1; }
+    @media (min-width: 781px) {
+      .talks__title {
+        font-size: 76px; } }
     @media (max-width: 780px) {
       .talks__title {
         font-size: 55px; } }
@@ -166,9 +170,11 @@
   .box__say {
     font-family: "Raleway", sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 40px; }
+    font-weight: 400; }
+    @media (min-width: 769px) {
+      .box__say {
+        font-size: 28px;
+        line-height: 40px; } }
     @media (max-width: 768px) {
       .box__say {
         text-align: center;
@@ -184,24 +190,27 @@
   .team__heading {
     font-family: "Raleway", sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 85px;
     text-align: center;
     color: #2A2E49;
     padding-bottom: 100px; }
+    @media (min-width: 881px) {
+      .team__heading {
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 85px; } }
     @media (max-width: 880px) {
       .team__heading {
-        font-family: "Raleway", sans-serif;
         font-size: 45px;
         font-weight: 700;
         line-height: 45px; } }
   .team__about {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     flex: 1 1 0px; }
+    @media (min-width: 881px) {
+      .team__about {
+        flex-direction: row; } }
     @media (max-width: 880px) {
       .team__about {
         flex-direction: column;
@@ -213,28 +222,30 @@
   .team__name {
     font-family: "Domine", sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
     padding-top: 30px;
     text-align: center; }
+    @media (min-width: 881px) {
+      .team__name {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px; } }
     @media (max-width: 880px) {
       .team__name {
-        font-family: "Raleway", sans-serif;
         font-size: 25px;
         font-weight: 700;
         line-height: 20px; } }
   .team__special {
     font-family: "Raleway", sans-serif;
     font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 32px;
-    text-align: center;
-    padding-top: 30px; }
+    text-align: center; }
+    @media (min-width: 881px) {
+      .team__special {
+        font-weight: 500;
+        font-size: 30px;
+        padding-top: 30px;
+        line-height: 32px; } }
     @media (max-width: 880px) {
       .team__special {
-        font-family: "Raleway", sans-serif;
         font-size: 21px;
         font-weight: 500;
         line-height: 28px;
@@ -245,26 +256,32 @@
 
 .journey {
   max-width: 1440px;
-  padding: 0 80px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 300px; }
+  @media (min-width: 781px) {
+    .journey {
+      padding: 0 80px; } }
   @media (max-width: 780px) {
     .journey {
       padding: 0 20px; } }
   .journey__title {
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 85px;
     font-family: "Raleway", sans-serif;
     text-align: center;
     color: #2A2E49;
     padding-bottom: 70px; }
+    @media (min-width: 781px) {
+      .journey__title {
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 85px; } }
     @media (max-width: 780px) {
       .journey__title {
         font-size: 45px;
         font-weight: 700;
         line-height: 45px; } }
+  .journey__slider {
+    overflow: hidden; }
   .journey__date {
     display: flex;
     flex-direction: column;
@@ -276,13 +293,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
-    height: 100px;
     font-family: "Domine", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 48px; }
+    font-style: normal; }
+    @media (min-width: 781px) {
+      .journey__time {
+        width: 250px;
+        height: 100px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 48px; } }
     @media (max-width: 780px) {
       .journey__time {
         font-size: 28px;
@@ -298,9 +317,11 @@
     text-align: center;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
     padding: 50px 0; }
+    @media (min-width: 781px) {
+      .journey__but {
+        font-size: 32px;
+        line-height: 38px; } }
     @media (max-width: 780px) {
       .journey__but {
         font-size: 28px;
@@ -318,10 +339,12 @@
 
 .glider-dot {
   z-index: 1;
-  width: 24px;
-  height: 24px;
   background: #585868;
   color: #FFFFFF; }
+  @media (min-width: 781px) {
+    .glider-dot {
+      width: 24px;
+      height: 24px; } }
   @media (max-width: 780px) {
     .glider-dot {
       width: 20px;
@@ -341,9 +364,11 @@
     height: 30vh;
     top: -150px;
     left: -100px;
-    width: 120%;
     transform: rotate(-8deg);
     z-index: -1; }
+    @media (min-width: 881px) {
+      .mission::after {
+        width: 120%; } }
     @media (max-width: 880px) {
       .mission::after {
         width: 150%; } }
@@ -352,13 +377,15 @@
     content: '';
     background-position: bottom;
     position: absolute;
-    height: 40vh;
-    bottom: -200px;
-    left: -100px;
     right: 0;
     width: 120%;
     transform: rotate(-8deg);
     z-index: -1; }
+    @media (min-width: 780px) {
+      .mission::before {
+        height: 40vh;
+        bottom: -200px;
+        left: -100px; } }
     @media (max-width: 780px) {
       .mission::before {
         height: 50vh;
@@ -381,11 +408,13 @@
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 70px;
     text-align: center;
     color: #FFFFFF;
     padding-top: 20px; }
+    @media (min-width: 881px) {
+      .mission__text {
+        font-size: 60px;
+        line-height: 70px; } }
     @media (max-width: 880px) {
       .mission__text {
         font-size: 40px;
@@ -394,12 +423,14 @@
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 47px;
     text-align: center;
     color: #FFFFFF;
-    padding: 50px 85px 110px 85px;
     z-index: 1; }
+    @media (min-width: 881px) {
+      .mission__message {
+        padding: 50px 85px 110px 85px;
+        font-size: 40px;
+        line-height: 47px; } }
     @media (max-width: 880px) {
       .mission__message {
         font-size: 25px;
@@ -410,8 +441,6 @@
   background-image: url(../assets/img/logo_conversa.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 3px -200px;
-  min-height: 108vh;
   padding: 0 80px;
   display: flex;
   justify-content: center;
@@ -419,6 +448,10 @@
   flex-direction: column;
   position: relative;
   padding-top: 200px; }
+  @media (min-width: 781px) {
+    .schedule {
+      background-position: 3px -200px;
+      min-height: 108vh; } }
   @media (max-width: 780px) {
     .schedule {
       background-position: 0 200px;
@@ -429,9 +462,11 @@
     font-style: normal;
     color: #2A2E49;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
     text-align: center; }
+    @media (min-width: 781px) {
+      .schedule__heading {
+        font-size: 48px;
+        line-height: 56px; } }
     @media (max-width: 780px) {
       .schedule__heading {
         font-size: 35px;
@@ -447,12 +482,14 @@
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
     margin-top: 100px;
     text-decoration: none;
     color: #FFFFFF;
     text-align: center; }
+    @media (min-width: 781px) {
+      .schedule__bta {
+        font-size: 18px;
+        line-height: 21px; } }
     @media (max-width: 780px) {
       .schedule__bta {
         font-size: 15px;
@@ -475,9 +512,11 @@
         display: none; } }
   .contacts__information {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     min-width: 100%; }
+    @media (min-width: 781px) {
+      .contacts__information {
+        flex-direction: row; } }
     @media (max-width: 780px) {
       .contacts__information {
         flex-direction: column; } }

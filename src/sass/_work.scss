@@ -1,25 +1,31 @@
 .work{
-  padding: 0 80px;
   margin: 0 auto;
   position: relative;
   margin-bottom: 300px;
+  
+  @media (min-width: 781px){
+    padding: 0 80px;
+  }
 
   @media (max-width: 780px){
     padding: 0 0 0 20px;
   }
 
-  &__services{
+  &__services {
     overflow: hidden;
   }
   
   &__title {
     font-weight: 700;
-    font-size: 72px;
-    line-height: 85px;
     font-family: $textrel;
     text-align: center;
     color: $rockcolor;
     padding-bottom: 70px;
+
+    @media (min-width: 781px){
+      font-size: 72px;
+      line-height: 85px;
+    }
 
     @media (max-width: 780px){
       font-size: 36px;
@@ -91,11 +97,14 @@
     text-shadow: 1px 1px 10px rgba(0,0,0, 0.5);
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 46px;
     color: $primarycolor;
     position: relative;
     z-index: 98;
+
+    @media (min-width: 781px){
+      font-size: 40px;
+      line-height: 46px;
+    }
     
     @media (max-width: 780px){
       font-size: 20px;

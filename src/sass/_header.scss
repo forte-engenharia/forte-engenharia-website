@@ -113,8 +113,11 @@
   }
 
   &__mobile-menu {
-    display: none;
     cursor: pointer;
+
+    @media (min-width: 1051px) {
+      display: none;
+    }
 
     @media (max-width: 1050px) {
       display: block;

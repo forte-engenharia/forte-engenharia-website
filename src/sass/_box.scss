@@ -11,8 +11,11 @@
     font-family: $textrel;
     font-style: normal;
     font-weight: 400;
-    font-size: 28px;
-    line-height: 40px;
+
+    @media (min-width: 769px) {
+      font-size: 28px;
+      line-height: 40px;
+    }
 
     @media (max-width: 768px){
       text-align: center;

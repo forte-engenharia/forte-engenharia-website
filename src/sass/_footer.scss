@@ -8,6 +8,7 @@
   &__logo{
     width: 76.39px;
     height: 108px;
+    
     @media (max-width: 860px){
       display: none;
     }
@@ -15,9 +16,12 @@
 
   &__information{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     min-width: 100%;
+
+    @media (min-width: 781px){
+      flex-direction: row;
+    }
 
     @media (max-width: 780px) {
       flex-direction: column;

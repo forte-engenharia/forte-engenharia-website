@@ -1,9 +1,12 @@
 .client{
   background-color: $rockcolor;
-  min-height: 100vh;
   margin: 0 auto;
   position: relative;
   overflow-x: clip;
+
+  @media (min-width: 781px) {
+    min-height: 100vh;
+  }
 
   @media (max-width: 780px){
     min-height: 60vh;
@@ -21,7 +24,7 @@
     transform: rotate(10deg);
     z-index: 1;
 
-    @media (min-width:780px) and (max-width:1200px){
+    @media (min-width:781px) and (max-width:1200px){
       width: 150%;
     }
     
@@ -35,13 +38,16 @@
 
   &__title{
     font-weight: 700;
-    font-size: 60px;
-    line-height: 70px;
     text-align: center;
     color: $primarycolor;
     font-family: $textrel;
     padding: 80px 0;
 
+    @media (min-width: 781px) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+    
     @media (max-width: 780px) {
       font-size: 30px;
       line-height: 35px;
@@ -60,11 +66,15 @@
 
   &__headline {
     font-weight: 400;
-    font-size: 42px;
-    line-height: 48px;
+
     font-family: $textdom;
     text-align: center;
     padding-top: 45px;
+
+    @media (min-width: 781px){
+      font-size: 42px;
+      line-height: 48px;
+    }
 
     @media (max-width: 780px){
       font-size: 21px;
@@ -73,8 +83,10 @@
   }
 
   &__picture {
-    height: 400px;
-    width: 1000px;
+    @media (min-width: 781px){
+      height: 400px;
+      width: 1000px;
+    }
 
     @media (max-width: 780px){
       height: 200px;
@@ -84,11 +96,15 @@
 
   &__par {
     font-weight: 400;
-    font-size: 32px;
-    line-height: 38px;
     font-family: $textrel;
     text-align: center;
     padding: 20px 0 0;
+
+    @media (min-width: 781px){
+      font-size: 32px;
+      line-height: 38px;
+    }
+    
     @media (max-width: 780px){
       font-size: 16px;
       line-height: 19px;
