@@ -592,6 +592,8 @@
   z-index: 1;
   background: #585868;
   color: #FFFFFF; }
+  .glider-dot:hover {
+    transition: 0.3s; }
   @media (min-width: 781px) {
     .glider-dot {
       width: 24px;
@@ -607,6 +609,9 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   background: #FFFFFF; }
