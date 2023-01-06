@@ -382,31 +382,25 @@
   margin: 0 auto;
   position: relative;
   overflow-x: clip; }
-  @media (min-width: 781px) {
-    .client {
-      min-height: 100vh; } }
-  @media (max-width: 780px) {
-    .client {
-      min-height: 60vh; } }
   .client::before {
     background-color: #2A2E49;
     content: '';
     background-position: bottom;
     position: absolute;
-    bottom: -200px;
-    left: -100px;
-    height: 40vh;
-    width: 120%;
     transform: rotate(10deg);
-    z-index: 1; }
-    @media (min-width: 781px) and (max-width: 1200px) {
+    z-index: 1;
+    display: block; }
+    @media (min-width: 781px) {
       .client::before {
-        width: 150%; } }
+        bottom: -200px;
+        left: -20%;
+        height: 400px;
+        width: 160%; } }
     @media (max-width: 780px) {
       .client::before {
-        bottom: -116px;
+        bottom: -80px;
         left: 0;
-        height: 25vh;
+        height: 300px;
         width: 113%; } }
   .client__title {
     font-weight: 700;

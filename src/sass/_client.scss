@@ -3,35 +3,27 @@
   margin: 0 auto;
   position: relative;
   overflow-x: clip;
-
-  @media (min-width: 781px) {
-    min-height: 100vh;
-  }
-
-  @media (max-width: 780px){
-    min-height: 60vh;
-  }
   
   &::before{
     background-color: $rockcolor;
     content: '';
     background-position: bottom;
     position: absolute;
-    bottom: -200px;
-    left: -100px;
-    height: 40vh;
-    width: 120%;
     transform: rotate(10deg);
     z-index: 1;
+    display: block;
 
-    @media (min-width:781px) and (max-width:1200px){
-      width: 150%;
+    @media (min-width:781px) {
+      bottom: -200px;
+      left: -20%;
+      height: 400px;
+      width: 160%;
     }
     
     @media (max-width: 780px){
-      bottom: -116px;
+      bottom: -80px;
       left: 0;
-      height: 25vh;
+      height: 300px;
       width: 113%;
     }
   }
