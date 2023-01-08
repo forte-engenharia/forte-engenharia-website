@@ -12,6 +12,10 @@
     transform: rotate(10deg);
     z-index: 1;
     display: block;
+    bottom: -80px;
+    left: 0;
+    height: 300px;
+    width: 113%;
 
     @media (min-width:781px) {
       bottom: -200px;
@@ -19,12 +23,13 @@
       height: 400px;
       width: 160%;
     }
-    
-    @media (max-width: 780px){
-      bottom: -80px;
-      left: 0;
-      height: 300px;
-      width: 113%;
+
+    @media (min-width:2000px){
+      bottom: -320px;
+      left: -20%;
+      height: 710px;
+      width: 130%;
+      transform: rotate(8deg);
     }
   }
 
