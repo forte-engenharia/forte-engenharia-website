@@ -252,7 +252,7 @@
       width: 400px; } }
 
 .show__subtitle {
-  font-family: "Domine", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -267,7 +267,7 @@
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  font-family: "Domine", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 15px;
   line-height: 18px;
@@ -308,7 +308,7 @@
     color: #FFFFFF; }
   .contacts__roll {
     margin-bottom: 35px;
-    font-family: "Domine", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

@@ -1,27 +1,32 @@
 .mission{
-  min-height: 100vh;
   position: relative;
   overflow-x: clip;
   background-color: $rockcolor;
   z-index: 1;
+
+  @media (min-width: 2000px) {
+    margin-top: 600px;
+  }
 
   &::after{
     background-color: $rockcolor;
     content: '';
     background-position: top;
     position: absolute;
-    height: 30vh;
-    top: -150px;
-    left: -100px;
+    width: 160%;
     transform: rotate(-8deg);
     z-index: -1;
 
-    @media (min-width: 881px){
-      width: 120%;
+    @media (max-width:1999px){
+      height: 300px;
+      top: -150px;
+      left: -100px;
     }
 
-    @media (max-width: 880px) {
-      width: 150%;
+    @media (min-width: 2000px) {
+      height: 800px;
+      top: -440px;
+      left: -100px;
     }
   }
   
@@ -34,17 +39,20 @@
     width: 120%;
     transform: rotate(-8deg);
     z-index: -1;
+    height: 300px;
+    bottom: -100px;
+    left: -50px;
 
-    @media (min-width:780px){
-      height: 40vh;
-      bottom: -200px;
+    @media (min-width:788px){
+      height: 400px;
+      bottom: -140px;
       left: -100px;
     }
 
-    @media (max-width:780px) {
-      height: 50vh;
-      bottom: -100px;
-      left: -50px;
+    @media (min-width:2000px){
+      height: 800px;
+      bottom: -315px;
+      left: -100px;
     }
   }
 
