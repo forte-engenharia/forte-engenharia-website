@@ -27,12 +27,20 @@
     background-color: $primarycolor;
     content: '';
     left: 0;
-    bottom: -400px;
     position: absolute;
     min-width: 110%;
-    height: 600px;
     transform: rotate(-4deg);
     z-index: 2;
+
+    @media (min-width: 781px){
+      height: 600px;
+      bottom: -400px;
+    }
+
+    @media (max-width: 780px) {
+      height: 250px;
+      bottom: 20px;
+    }
   }
   
   &__title{

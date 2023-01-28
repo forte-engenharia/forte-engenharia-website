@@ -149,12 +149,18 @@
     background-color: #FFFFFF;
     content: '';
     left: 0;
-    bottom: -400px;
     position: absolute;
     min-width: 110%;
-    height: 600px;
     transform: rotate(-4deg);
     z-index: 2; }
+    @media (min-width: 781px) {
+      .talks::before {
+        height: 600px;
+        bottom: -400px; } }
+    @media (max-width: 780px) {
+      .talks::before {
+        height: 250px;
+        bottom: 20px; } }
   .talks__title {
     width: max-content;
     font-family: "Raleway", sans-serif;

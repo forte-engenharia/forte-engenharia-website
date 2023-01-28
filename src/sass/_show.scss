@@ -61,7 +61,9 @@
   }
 
   &__samecenter{
-    left: 50%;
+    @media (min-width: 881px) {
+      left: 50%;
+    }
   }
 
   &__pic{
