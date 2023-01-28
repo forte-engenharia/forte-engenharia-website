@@ -6,7 +6,7 @@ new Glider($workCarousel,{
   slidesToShow:2,
   slidesToScroll:2,
   scrollLock: true,
-  dragVelocity: 2,
+  dragVelocity: 1,
   draggable:true,
   dots:'.js-carousel--dual-dots',
   arrows: {
@@ -30,45 +30,3 @@ new Glider($workCarousel,{
     }
   ]
 });
-
-//Simple slider
-
-const $clientCarousel = document.querySelector('.js-carousel--simple');
-
-new Glider($clientCarousel,{
-  autoplay: 2000,
-  slidesToShow:1,
-  duration:.5,
-  draggable: true,
-  dragVelocity:0.9,
-  scrollLock: true,
-  rewind: true,
-  dots:'.js-carousel--simple-dots',
-  arrows:{
-  prev:".js-carousel--simple-prev",
-  next:".js-carousel--simple-next",
-},
-});
-
-function sliderAuto(slider, miliseconds) {
-  slider.isLastSlide = function() {
-    return slider.page >= slider.dots.childElementCount - 1;
-  }
- 
-  var slide = function() {
-    slider.slideTimeout = setTimeout(function() {
-      function slideTo() {
-        return slider.isLastSlide() ? 0 : slider.page + 1;
-      }
- 
-      slider.scrollItem(slideTo(), true);
-    }, miliseconds);
-  }
- 
-  slider.ele.addEventListener('glider-animated', function(event) {
-    window.clearInterval(slider.slideTimeout);
-    slide();
-  });
- 
-  slide();
- }

@@ -1,6 +1,5 @@
-.client{
+.client{ 
   background-color: $rockcolor;
-  margin: 0 auto;
   position: relative;
   overflow-x: clip;
   
@@ -14,11 +13,11 @@
     display: block;
     bottom: -80px;
     left: 0;
-    height: 300px;
+    height: 150px;
     width: 113%;
 
     @media (min-width:781px) {
-      bottom: -200px;
+      bottom: -300px;
       left: -20%;
       height: 400px;
       width: 160%;
@@ -38,55 +37,17 @@
     text-align: center;
     color: $primarycolor;
     font-family: $textrel;
-    padding: 80px 0;
 
     @media (min-width: 781px) {
       font-size: 60px;
       line-height: 70px;
+      padding: 80px 0;
     }
     
     @media (max-width: 780px) {
       font-size: 30px;
       line-height: 35px;
-    }
-  }
-
-  &__list{
-    color: $primarycolor;
-    z-index: 1;
-    overflow: hidden;
-  }
-
-  &__building{
-    text-align: center;
-  }
-
-  &__headline {
-    font-weight: 400;
-    font-family: $textrel;
-    text-align: center;
-    padding-top: 45px;
-
-    @media (min-width: 781px){
-      font-size: 42px;
-      line-height: 48px;
-    }
-
-    @media (max-width: 780px){
-      font-size: 21px;
-      line-height: 24px;
-    }
-  }
-
-  &__picture {
-    @media (min-width: 781px){
-      height: 400px;
-      width: 1000px;
-    }
-
-    @media (max-width: 780px){
-      height: 200px;
-      width: 500px;
+      padding-top: 40px;
     }
   }
 
@@ -95,6 +56,7 @@
     font-family: $textrel;
     text-align: center;
     padding: 20px 0 0;
+    color: $primarycolor;
 
     @media (min-width: 781px){
       font-size: 32px;
@@ -107,11 +69,174 @@
     }
   }
 
-  .glider-dots{
-    padding-top: 25px;
+  &__headline {
+    font-weight: 400;
+    font-family: $textrel;
+    text-align: center;
+    padding-top: 45px;
+    color: $primarycolor;
+
+    @media (min-width: 781px){
+      font-size: 42px;
+      line-height: 48px;
+    }
+
+    @media (max-width: 780px){
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+
+  &__slider {
+    width: 1024px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
   }
   
-  .glider-dot.active{
+  &__slides {
+    width: 500%;
+    display: flex;
+
+    @media (max-width: 800px){
+      height: 550px;
+    }
+
+    @media (min-width:801){
+      height: 800px;
+    }
+  }
+  
+  &__slides input {
+    display: none;
+  }
+  
+  &__slide {
+    width: 20%;
+    transition: 2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__slide .client__picture {
+    @media (min-width: 1070px){
+      width: 1024px;
+      height: 500px;
+    }
+
+    @media (max-width: 1069px){
+      width: 450px;
+      height: 300px;
+    }
+  }
+
+  &__navigation-manual {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width:781px){
+      bottom: -55px;
+    }
+
+    @media (max-width: 780px){
+      bottom: 15px;
+    }
+  }
+
+  &__manual-btn {
+    background-color: $dotsclient;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 1000;
+
+    @media (min-width: 781px){
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (max-width: 780px){
+      width: 20px;
+      height: 20px;
+    }
+    
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    
+    &:hover {
+      background-color: $primarycolor;
+    }
+  }
+  
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+  #radio4:checked ~ .first {
+    margin-left: -60%;
+  }
+
+  &__navigation-auto {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+    @media (min-width:781px){
+      bottom: -55px;
+    }
+
+    @media (max-width: 780px){
+      bottom: 15px;
+    }
+  }
+  
+  
+  &__navigation-auto .client__auto-btn {
+    border-radius: 50%;
+
+    @media (min-width: 781px){
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (max-width: 780px){
+      width: 20px;
+      height: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  
+  
+  #radio-btn1:checked ~ .client__navigation-auto, .client__auto-btn1 {
     background-color: $primarycolor;
   }
-}
+  
+  #radio-btn2:checked ~ .client__navigation-auto, .client__auto-btn2 {
+    background-color: $primarycolor;
+  }
+  
+  #radio-btn3:checked ~ .client__navigation-auto, .client__uto-btn3 {
+    background-color: $primarycolor;
+  }
+  
+  #radio-btn4:checked ~ .client__navigation-auto, .client__auto-btn4 {
+    background-color: $primarycolor;
+  }
+} 

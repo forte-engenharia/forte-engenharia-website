@@ -1,35 +1,46 @@
 section.client
   h2.client__title
     strong Nossos Clientes
-  .client__list.js-carousel--simple
-    .client__building
+  .client__slides
+    input#radio1(type='radio' name='radio-btn')
+    input#radio2(type='radio' name='radio-btn')
+    input#radio3(type='radio' name='radio-btn')
+    input#radio4(type='radio' name='radio-btn')
+    .client__slide.first
       img.client__picture(alt='Edifício Ópera Prima' src="/assets/img/opera.png" loading="lazy")
       h3.client__headline
         strong Edifício Ópera Prima
       p.client__par
         strong Serviços: #{''}
         |  Retrofit da fachada junto com a reforma da guarita.
-    .client__building
+    .client__slide
       img.client__picture(alt='Edifício Golden Park' src="/assets/img/golden.png" loading="lazy")
       h3.client__headline
         strong Edifício Golden Park
       p.client__par
         strong Serviço: #{''}
         | Elaboração de projetos para hall dos elevadores / Elaboração projeto para salão gourmet.
-    .client__building
+    .client__slide
       img.client__picture(alt='Edifício Solar D’ América' src="/assets/img/solar.png" loading="lazy")
       h3.client__headline
         strong Edifício Solar D’ América
       p.client__par
         strong Serviço: #{''}
         | Reforma da fachada.
-    .client__building
-      img.client__picture(alt='Edifício Caravelas' src="/assets/img/caravelas.png" loading="lazy")
-      h3.client__headline
-        strong Edifício Caravelas
-      p.client__par
-        strong Serviço: #{''}
-        | Assessoria com acompanahmento técnico.
-  button.js-carousel--simple-prev(aria-label="Anterior")
-  button.js-carousel--simple-next(aria-label="Proximo")
-  .js-carousel--simple-dots(role='tablist')
+    .client__slide
+        img.client__picture(alt='Edifício Caravelas' src="/assets/img/caravelas.png" loading="lazy")
+        h3.client__headline
+          strong Edifício Caravelas
+        p.client__par
+          strong Serviço: #{''}
+          | Assessoria com acompanahmento técnico.
+    .client__navigation-auto
+      .client__auto-btn.client__auto-btn1
+      .client__auto-btn.client__auto-btn2
+      .client__auto-btn.client__auto-btn3
+      .client__auto-btn.client__auto-btn4
+    .client__navigation-manual
+      label.client__manual-btn(for='radio1')
+      label.client__manual-btn(for='radio2')
+      label.client__manual-btn(for='radio3')
+      label.client__manual-btn(for='radio4')
