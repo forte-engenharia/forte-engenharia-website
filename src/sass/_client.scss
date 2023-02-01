@@ -8,7 +8,7 @@
     content: '';
     background-position: bottom;
     position: absolute;
-    transform: rotate(10deg);
+    transform: rotate(8deg);
     z-index: 1;
     display: block;
     bottom: -80px;
@@ -17,7 +17,7 @@
     width: 113%;
 
     @media (min-width:781px) {
-      bottom: -300px;
+      bottom: -270px;
       left: -20%;
       height: 400px;
       width: 160%;
@@ -28,7 +28,7 @@
       left: -20%;
       height: 710px;
       width: 130%;
-      transform: rotate(8deg);
+      transform: rotate(6deg);
     }
   }
 
@@ -123,14 +123,21 @@
   }
 
   &__slide .client__picture {
+    width: 315px;
+    height: 250px;
+    
+    
+    @media (min-width: 800px){
+      width: 450px;
+      height: 300px;
+    }
     @media (min-width: 1070px){
       width: 1024px;
       height: 500px;
     }
-
-    @media (max-width: 1069px){
-      width: 450px;
-      height: 300px;
+    @media (min-width: 2000px){
+      width: 1700px;
+      height: 800px;
     }
   }
 
@@ -207,7 +214,6 @@
       bottom: 15px;
     }
   }
-  
   
   &__navigation-auto .client__auto-btn {
     border-radius: 50%;
