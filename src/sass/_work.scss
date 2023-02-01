@@ -72,22 +72,27 @@
 
     &--projetos{
       background-image: url(../assets/img/projetos.png);
+      background-size: cover !important;
     }
 
     &--retrofit{
       background-image: url(../assets/img/retrofit.png);
+      background-size: cover !important;
     }
 
     &--reforma{
       background-image: url(../assets/img/reforma.png);
+      background-size: cover !important;
     }
 
     &--laudos{
       background-image: url(../assets/img/laudos.png);
+      background-size: cover !important;
     }
 
     &--consultoria{
       background-image: url(../assets/img/consultoria.png);
+      background-size: cover !important;
     }
   }
 

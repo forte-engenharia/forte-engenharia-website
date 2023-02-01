@@ -1,3 +1,7 @@
-const element = document.getElementById("#hero__direction")
-
-element.scrollIntoView({behavior: "smooth"});
+const selector = "#hero__direction";
+const element = document.querySelector(selector);
+if (element) {
+  element.scrollIntoView({ behavior: "smooth" });
+} else {
+  console.error(`Element with selector ${selector} not found.`);
+}

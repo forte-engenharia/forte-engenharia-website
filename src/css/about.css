@@ -320,6 +320,9 @@
     color: #2D4C7C; }
   .journey__timeline--junction {
     margin-top: -50px; }
+    @media (max-width: 450px) {
+      .journey__timeline--junction {
+        margin-left: 5px; } }
   .journey__component {
     margin: 0 20px 20px 20px; }
   .journey__component--bottom {

@@ -7,7 +7,7 @@ new Glider($workCarousel,{
   slidesToScroll:2,
   scrollLock: true,
   dragVelocity: 1,
-  draggable:true,
+  draggable: true,
   dots:'.js-carousel--dual-dots',
   arrows: {
     prev:".js-carousel--dual-prev",

@@ -61,6 +61,10 @@
 
   &__timeline--junction{
     margin-top: -50px;
+
+    @media (max-width: 450px) {
+      margin-left: 5px;
+    }
   }
   
   &__component {

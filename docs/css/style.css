@@ -348,15 +348,20 @@
       z-index: 1;
       transition: background-color linear .25s; }
     .work__back--projetos {
-      background-image: url(../assets/img/projetos.png); }
+      background-image: url(../assets/img/projetos.png);
+      background-size: cover !important; }
     .work__back--retrofit {
-      background-image: url(../assets/img/retrofit.png); }
+      background-image: url(../assets/img/retrofit.png);
+      background-size: cover !important; }
     .work__back--reforma {
-      background-image: url(../assets/img/reforma.png); }
+      background-image: url(../assets/img/reforma.png);
+      background-size: cover !important; }
     .work__back--laudos {
-      background-image: url(../assets/img/laudos.png); }
+      background-image: url(../assets/img/laudos.png);
+      background-size: cover !important; }
     .work__back--consultoria {
-      background-image: url(../assets/img/consultoria.png); }
+      background-image: url(../assets/img/consultoria.png);
+      background-size: cover !important; }
   .work__text {
     text-align: center;
     font-family: "Raleway", sans-serif;
@@ -511,6 +516,8 @@
       margin-right: 40px; }
     .client__manual-btn:hover {
       background-color: #FFFFFF; }
+  .client .active {
+    background-color: #FFFFFF; }
   .client #radio1:checked ~ .first {
     margin-left: 0; }
   .client #radio2:checked ~ .first {
@@ -542,14 +549,6 @@
         height: 20px; } }
     .client__navigation-auto .client__auto-btn:not(:last-child) {
       margin-right: 40px; }
-  .client #radio-btn1:checked ~ .client__navigation-auto, .client .client__auto-btn1 {
-    background-color: #FFFFFF; }
-  .client #radio-btn2:checked ~ .client__navigation-auto, .client .client__auto-btn2 {
-    background-color: #FFFFFF; }
-  .client #radio-btn3:checked ~ .client__navigation-auto, .client .client__uto-btn3 {
-    background-color: #FFFFFF; }
-  .client #radio-btn4:checked ~ .client__navigation-auto, .client .client__auto-btn4 {
-    background-color: #FFFFFF; }
 
 .schedule {
   background-image: url(../assets/img/logo_conversa.png);
