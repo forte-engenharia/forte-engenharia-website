@@ -326,11 +326,12 @@
     color: #2D4C7C; }
   .journey__timeline--junction {
     margin-top: -50px; }
-    @media (max-width: 450px) {
-      .journey__timeline--junction {
-        margin-left: 5px; } }
-  .journey__component {
-    margin: 0 20px 20px 20px; }
+  @media (min-width: 781px) {
+    .journey__component {
+      margin: 0 20px 20px 20px; } }
+  @media (max-width: 780px) {
+    .journey__component {
+      margin: 5px 5px 5px 10px; } }
   .journey__component--bottom {
     margin-bottom: 0; }
   .journey__middle {
@@ -339,7 +340,7 @@
   .journey__middle--start {
     top: 60px; }
   .journey__middle--end {
-    height: 50%; }
+    height: 80%; }
   .journey__point {
     position: absolute;
     top: 60px;
@@ -355,15 +356,25 @@
     top: initial;
     bottom: 0; }
   .journey__time {
-    font-family: "Raleway", sans-serif;
-    font-size: 50px; }
+    font-family: "Raleway", sans-serif; }
+    @media (min-width: 781px) {
+      .journey__time {
+        font-size: 50px; } }
+    @media (max-width: 780px) {
+      .journey__time {
+        font-size: 30px; } }
   .journey__time--right {
     text-align: start; }
   .journey__time--left {
     text-align: end; }
-  .journey__paragraph {
-    padding-top: 30px;
-    font-size: 20px; }
+  @media (min-width: 781px) {
+    .journey__paragraph {
+      font-size: 20px;
+      padding-top: 30px; } }
+  @media (max-width: 780px) {
+    .journey__paragraph {
+      font-size: 15px;
+      padding: 15px; } }
   .journey__paragraph--right {
     text-align: start; }
   .journey__paragraph--left {

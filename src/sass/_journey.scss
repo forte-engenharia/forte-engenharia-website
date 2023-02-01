@@ -61,14 +61,16 @@
 
   &__timeline--junction{
     margin-top: -50px;
-
-    @media (max-width: 450px) {
-      margin-left: 5px;
-    }
   }
   
   &__component {
-    margin: 0 20px 20px 20px;
+    @media (min-width: 781px) {
+      margin: 0 20px 20px 20px;
+    }
+  
+    @media (max-width:780px) {
+      margin: 5px 5px 5px 10px;
+    }
   }
 
   &__component--bottom {
@@ -85,7 +87,7 @@
   }
 
   &__middle--end {
-    height:  50%;
+    height:  80%;
   }
 
   &__point {
@@ -110,7 +112,13 @@
   
   &__time {
     font-family: $textrel;
-    font-size: 50px;
+    @media (min-width: 781px) {
+      font-size: 50px;
+    }
+  
+    @media (max-width:780px) {
+      font-size: 30px;
+    }
   }
 
   &__time--right{
@@ -122,8 +130,15 @@
   }
   
   &__paragraph {
-    padding-top: 30px;
-    font-size: 20px;
+    @media (min-width: 781px) {
+      font-size: 20px;
+      padding-top: 30px;
+    }
+  
+    @media (max-width:780px) {
+      font-size: 15px;
+      padding: 15px;
+    }
   }
 
   &__paragraph--right {

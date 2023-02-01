@@ -480,8 +480,8 @@
     position: relative;
     z-index: 1; }
   .client__slide .client__picture {
-    width: 315px;
-    height: 250px; }
+    width: 350px;
+    height: 200px; }
     @media (min-width: 800px) {
       .client__slide .client__picture {
         width: 450px;
