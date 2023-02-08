@@ -80,7 +80,7 @@
         border-color: #FFFFFF; } }
     .header__link--cta:hover {
       opacity: 1; }
-  .header__link.is-active {
+  .header__link--active {
     border-bottom: 4px solid #046ED0;
     font-size: 24px; }
   .header__mobile-menu {

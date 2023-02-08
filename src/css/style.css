@@ -80,7 +80,7 @@
         border-color: #FFFFFF; } }
     .header__link--cta:hover {
       opacity: 1; }
-  .header__link.is-active {
+  .header__link--active {
     border-bottom: 4px solid #046ED0;
     font-size: 24px; }
   .header__mobile-menu {
@@ -520,7 +520,7 @@
         width: 20px;
         height: 20px; } }
     .client__manual-btn:not(:last-child) {
-      margin-right: 40px; }
+      margin-right: 20px; }
     .client__manual-btn:hover {
       background-color: #FFFFFF; }
   .client .active {
@@ -555,7 +555,7 @@
         width: 20px;
         height: 20px; } }
     .client__navigation-auto .client__auto-btn:not(:last-child) {
-      margin-right: 40px; }
+      margin-right: 20px; }
 
 .schedule {
   background-image: url(../assets/img/logo_conversa.png);
