@@ -339,8 +339,12 @@
     background-color: #B3B2B2; }
   .journey__middle--start {
     top: 60px; }
-  .journey__middle--end {
-    height: 80%; }
+  @media (min-width: 781px) {
+    .journey__middle--end {
+      height: 50%; } }
+  @media (max-width: 780px) {
+    .journey__middle--end {
+      height: 80%; } }
   .journey__point {
     position: absolute;
     top: 60px;

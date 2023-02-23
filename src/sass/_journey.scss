@@ -87,7 +87,13 @@
   }
 
   &__middle--end {
-    height:  80%;
+    @media (min-width: 781px) {
+      height: 50%;
+    }
+  
+    @media (max-width:780px) {
+      height: 80%;
+    }
   }
 
   &__point {
