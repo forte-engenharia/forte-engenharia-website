@@ -34,10 +34,23 @@
 
   &__direction{
     display: flex;
-    flex-flow: row wrap;
-    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 150px;
+    max-width: 1440px;
+    margin: 0 auto;
 
+    @media (max-width: 880px) {
+      gap: 80px;
+    }
+    
+    @media (min-width: 881px) {
+      gap: 100px;
+    }
+
+    @media (min-width: 1500px) {
+      gap: 150px;
+    }
   }
 
   &__same{
@@ -48,13 +61,13 @@
  
     
     @media (max-width: 880px) {
-      height: 400px;
-      width: calc((100% / 1) - 30px)
+      height: 450px;
+      width: calc((85% / 1) - 10px)
     }
     
     @media (min-width: 881px) {
-      width: calc((100% / 2) - 100px);
-      height: 600px;
+      width: calc((92% / 2) - 100px);
+      height: 500px;
     }
 
     @media (min-width: 1500px) {
@@ -69,6 +82,7 @@
       top: 0;
       height: 100%;
       transition: all .7s ease-in-out;
+      overflow-y: hidden;
     }
 
     &:hover .show__indent{
@@ -87,7 +101,6 @@
 
   &__samecenter{
     @media (min-width: 881px) {
-      left: 25%;
       margin-bottom: 0;
     }
   }
