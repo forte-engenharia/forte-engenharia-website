@@ -1,0 +1,91 @@
+.confusion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+
+  &__title{
+    font-family: $textrel;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: $colorjourney;
+  }
+
+  &__paragraph{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &__backimg{
+    margin-top: 20px;
+    position: relative;
+
+    @media (max-width: 780px) {
+      height: 250px;
+    }
+    @media (min-width: 781px){
+      height: 400px;
+    }
+
+    @media (min-width: 1920px){
+      height: 600px;
+    }
+  } 
+
+  &__people{
+    position: absolute;
+
+    @media (max-width: 780px) {
+      width: 410px;
+      height: 248px;
+    }
+    @media (min-width: 781px){
+      width: 610px;
+      height: 348px;
+    }
+
+    @media (min-width: 1920px){
+      width: 810px;
+      height: 548px;
+    }
+  }
+
+  &__bta {
+    background: $bluecolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 10px;
+    font-family: $textrel;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 100px;
+    text-decoration: none;
+    color: $primarycolor;
+    text-align: center;
+
+    @media (min-width: 781px){
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    @media (max-width: 780px) {
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+  }
+}

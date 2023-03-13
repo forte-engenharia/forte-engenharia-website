@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Raleway:wght@400;700&display=swap");
+.confusion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh; }
+  .confusion__title {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    color: #2D4C7C; }
+  .confusion__paragraph {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 20px;
+    text-align: center; }
+  .confusion__backimg {
+    margin-top: 20px;
+    position: relative; }
+    @media (max-width: 780px) {
+      .confusion__backimg {
+        height: 250px; } }
+    @media (min-width: 781px) {
+      .confusion__backimg {
+        height: 400px; } }
+    @media (min-width: 1920px) {
+      .confusion__backimg {
+        height: 600px; } }
+  .confusion__people {
+    position: absolute; }
+    @media (max-width: 780px) {
+      .confusion__people {
+        width: 410px;
+        height: 248px; } }
+    @media (min-width: 781px) {
+      .confusion__people {
+        width: 610px;
+        height: 348px; } }
+    @media (min-width: 1920px) {
+      .confusion__people {
+        width: 810px;
+        height: 548px; } }
+  .confusion__bta {
+    background: #046ED0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 10px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 100px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center; }
+    @media (min-width: 781px) {
+      .confusion__bta {
+        font-size: 18px;
+        line-height: 21px; } }
+    @media (max-width: 780px) {
+      .confusion__bta {
+        font-size: 15px;
+        line-height: 15px; } }
+    .confusion__bta:hover {
+      opacity: 0.7;
+      transition: 0.3s; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
