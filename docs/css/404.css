@@ -4,21 +4,41 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100vh; }
   .confusion__title {
     font-family: "Raleway", sans-serif;
-    font-style: normal;
     font-weight: 700;
-    font-size: 60px;
-    line-height: 75px;
     color: #2D4C7C; }
+    @media (max-width: 780px) {
+      .confusion__title {
+        font-size: 40px;
+        line-height: 45px; } }
+    @media (min-width: 781px) {
+      .confusion__title {
+        font-size: 60px;
+        line-height: 71px; } }
+    @media (min-width: 1920px) {
+      .confusion__title {
+        font-size: 90px;
+        line-height: 100px; } }
   .confusion__paragraph {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
     margin-top: 20px;
-    text-align: center; }
+    text-align: center;
+    font-family: "Raleway", sans-serif; }
+    @media (max-width: 780px) {
+      .confusion__paragraph {
+        font-size: 18px;
+        line-height: 21px; } }
+    @media (min-width: 781px) {
+      .confusion__paragraph {
+        font-size: 23px;
+        line-height: 27px; } }
+    @media (min-width: 1920px) {
+      .confusion__paragraph {
+        font-size: 40px;
+        line-height: 48px; } }
   .confusion__backimg {
     margin-top: 20px;
     position: relative; }
@@ -30,7 +50,7 @@
         height: 400px; } }
     @media (min-width: 1920px) {
       .confusion__backimg {
-        height: 600px; } }
+        height: 800px; } }
   .confusion__people {
     position: absolute; }
     @media (max-width: 780px) {
@@ -43,8 +63,8 @@
         height: 348px; } }
     @media (min-width: 1920px) {
       .confusion__people {
-        width: 810px;
-        height: 548px; } }
+        width: 1010px;
+        height: 648px; } }
   .confusion__bta {
     background: #046ED0;
     display: flex;
@@ -56,18 +76,22 @@
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 50px;
     text-decoration: none;
     color: #FFFFFF;
     text-align: center; }
-    @media (min-width: 781px) {
-      .confusion__bta {
-        font-size: 18px;
-        line-height: 21px; } }
     @media (max-width: 780px) {
       .confusion__bta {
         font-size: 15px;
-        line-height: 15px; } }
+        line-height: 18px; } }
+    @media (min-width: 781px) {
+      .confusion__bta {
+        font-size: 20px;
+        line-height: 23px; } }
+    @media (min-width: 1920px) {
+      .confusion__bta {
+        font-size: 30px;
+        line-height: 38px; } }
     .confusion__bta:hover {
       opacity: 0.7;
       transition: 0.3s; }
