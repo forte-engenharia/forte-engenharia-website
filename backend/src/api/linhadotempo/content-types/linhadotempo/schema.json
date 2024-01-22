@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "linhadotempos",
+  "info": {
+    "singularName": "linhadotempo",
+    "pluralName": "linhadotempos",
+    "displayName": "linhadotempo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ano": {
+      "type": "integer",
+      "required": true,
+      "default": 2016,
+      "unique": true
+    },
+    "texto": {
+      "type": "string",
+      "default": "De uma ideia nasce a Forte Engenharia.",
+      "required": true
+    }
+  }
+}

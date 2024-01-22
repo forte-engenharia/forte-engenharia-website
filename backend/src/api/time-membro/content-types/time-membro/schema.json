@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "time_membros",
+  "info": {
+    "singularName": "time-membro",
+    "pluralName": "time-membros",
+    "displayName": "TimeMembro"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "default": "Caroline Borges"
+    },
+    "especializacao": {
+      "type": "string",
+      "default": "Especialista em Patologia das Construções.",
+      "required": true
+    },
+    "foto": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

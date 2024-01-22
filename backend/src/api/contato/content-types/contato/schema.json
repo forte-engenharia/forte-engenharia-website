@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "contatos",
+  "info": {
+    "singularName": "contato",
+    "pluralName": "contatos",
+    "displayName": "Contato"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "whatsapp": {
+      "type": "string",
+      "required": true,
+      "default": "(65) 9.8136-9818"
+    },
+    "whatsappLink": {
+      "type": "string",
+      "default": "https://wa.me/5565981369818",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "default": "forteengenharia.cjp@gmail.com",
+      "required": true
+    },
+    "emailLink": {
+      "type": "string",
+      "default": "mailto:forteengenharia.cjp@gmail.com",
+      "required": true
+    },
+    "instagram": {
+      "type": "string",
+      "default": "@forte.eng",
+      "required": true
+    },
+    "instagramLink": {
+      "type": "string",
+      "default": "https://www.instagram.com/forte.eng/",
+      "required": true
+    },
+    "endereco": {
+      "type": "string",
+      "default": "Rua Costa Rica, nº 13. Q.04, Cristo Rei/VG",
+      "required": true
+    },
+    "enderecoLink": {
+      "type": "string",
+      "default": "https://goo.gl/maps/ELJ9bbKz3C8F4k9MA",
+      "required": true
+    }
+  }
+}
