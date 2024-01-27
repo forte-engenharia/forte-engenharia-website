@@ -1,1 +1,1 @@
-const CMS_URL = 'http://localhost:1337/api';
+const CMS_URL = 'http://localhost:1337';

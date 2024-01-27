@@ -863,20 +863,21 @@ export interface ApiContatoSecaoContatoSecao extends Schema.SingleType {
     singularName: 'contato-secao';
     pluralName: 'contato-secaos';
     displayName: 'ContatoSecao';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    titulo: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Come\u00E7e sua reforma com a qualidade e profissionalismo da Forte Engenharia'>;
     botaoTexto: Attribute.String &
       Attribute.Required &
       Attribute.DefaultTo<'Agende uma conversa'>;
     botaoLink: Attribute.String &
       Attribute.Required &
       Attribute.DefaultTo<'https://wa.me/5565981369818'>;
+    titulo: Attribute.RichText &
+      Attribute.Required &
+      Attribute.DefaultTo<'Come\u00E7e sua reforma com a qualidade e profissionalismo da Forte Engenharia'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -943,9 +944,6 @@ export interface ApiPaginaInicialPaginaInicial extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    titulo: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Somos a Forte Engenharia'>;
     subtitulo: Attribute.String &
       Attribute.Required &
       Attribute.DefaultTo<'Obra ou projeto? N\u00F3s oferecemos solu\u00E7\u00F5es personalizadas com excel\u00EAncia!'>;
@@ -955,6 +953,10 @@ export interface ApiPaginaInicialPaginaInicial extends Schema.SingleType {
     clientesTitulo: Attribute.String &
       Attribute.Required &
       Attribute.DefaultTo<'Nossos Clientes'>;
+    background: Attribute.Media & Attribute.Required;
+    titulo: Attribute.RichText &
+      Attribute.Required &
+      Attribute.DefaultTo<'Somos a **Forte Engenharia**'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -979,6 +981,7 @@ export interface ApiServicoServico extends Schema.CollectionType {
     singularName: 'servico';
     pluralName: 'servicos';
     displayName: 'servico';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -991,7 +994,7 @@ export interface ApiServicoServico extends Schema.CollectionType {
       Attribute.Required &
       Attribute.DefaultTo<'Confira nossos projetos de retrofit realizados.'>;
     texto: Attribute.RichText & Attribute.Required;
-    image: Attribute.Media & Attribute.Required;
+    imagem: Attribute.Media & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

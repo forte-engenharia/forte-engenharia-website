@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "titulo": {
-      "type": "string",
-      "required": true,
-      "default": "Somos a Forte Engenharia"
-    },
     "subtitulo": {
       "type": "string",
       "default": "Obra ou projeto? Nós oferecemos soluções personalizadas com excelência!",
@@ -31,6 +26,20 @@
       "type": "string",
       "required": true,
       "default": "Nossos Clientes"
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "titulo": {
+      "type": "richtext",
+      "default": "Somos a **Forte Engenharia**",
+      "required": true
     }
   }
 }
