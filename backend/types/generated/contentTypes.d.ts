@@ -1072,9 +1072,6 @@ export interface ApiSobreSobre extends Schema.SingleType {
     historiaTitulo: Attribute.String &
       Attribute.Required &
       Attribute.DefaultTo<'Nossa Hist\u00F3ria'>;
-    historiaSubtitulo: Attribute.String &
-      Attribute.Required &
-      Attribute.DefaultTo<'Marcada por grandes transforma\u00E7\u00F5es e momentos \u00FAnicos, a Forte Engenharia continua crescendo e inovando para melhor atend\u00EA-los!'>;
     missao: Attribute.String &
       Attribute.Required &
       Attribute.DefaultTo<'Ser empresa refer\u00EAncia no atendimento a condom\u00EDnios, oferecendo solu\u00E7\u00F5es criativas, eficientes e seguras.'>;
@@ -1084,6 +1081,9 @@ export interface ApiSobreSobre extends Schema.SingleType {
     visao: Attribute.String &
       Attribute.Required &
       Attribute.DefaultTo<'Construir relacionamento positivos e de longo prazo com nossos clientes criando um v\u00EDnculo baseados na confian\u00E7a e no respeito.'>;
+    historiaSubtitulo: Attribute.RichText &
+      Attribute.Required &
+      Attribute.DefaultTo<'Marcada por grandes transforma\u00E7\u00F5es e momentos \u00FAnicos, a **Forte Engenharia** continua crescendo e inovando para melhor atend\u00EA-los!'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

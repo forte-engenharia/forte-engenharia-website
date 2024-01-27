@@ -1,6 +1,6 @@
 class HomeClientsSection {
   #homePageContent;
-  onUpdate() {
+  update() {
     this.#homePageContent = siteData.from('pagina-inicial');
     this.#updateClientTitle();
     this.#updateClientsSlides(siteData.from('clientes'));

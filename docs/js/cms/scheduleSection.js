@@ -1,14 +1,14 @@
 class ScheduleSection {
   #scheduleContent;
-  onUpdate() {
+  update() {
     this.#scheduleContent = siteData.from('contato-secao');
-    this.#updateContent(new showdown.Converter());
+    this.#updateContent();
   }
-  #updateContent(mdConverter) {
+  #updateContent() {
     const scheduleTitleEl = document.getElementsByClassName('schedule__heading')[0];
     const scheduleButton = document.getElementsByClassName('schedule__bta')[0];
 
-    scheduleTitleEl.innerHTML = mdConverter.makeHtml(this.#scheduleContent.titulo);
+    scheduleTitleEl.innerHTML = convertMarkdownToHtml(this.#scheduleContent.titulo);
     scheduleButton.innerHTML = this.#scheduleContent.botaoTexto;
     scheduleButton.href = this.#scheduleContent.botaoLink;
   }

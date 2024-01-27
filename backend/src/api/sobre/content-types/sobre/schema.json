@@ -32,11 +32,6 @@
       "default": "Nossa História",
       "required": true
     },
-    "historiaSubtitulo": {
-      "type": "string",
-      "required": true,
-      "default": "Marcada por grandes transformações e momentos únicos, a Forte Engenharia continua crescendo e inovando para melhor atendê-los!"
-    },
     "missao": {
       "type": "string",
       "default": "Ser empresa referência no atendimento a condomínios, oferecendo soluções criativas, eficientes e seguras.",
@@ -50,6 +45,11 @@
     "visao": {
       "type": "string",
       "default": "Construir relacionamento positivos e de longo prazo com nossos clientes criando um vínculo baseados na confiança e no respeito.",
+      "required": true
+    },
+    "historiaSubtitulo": {
+      "type": "richtext",
+      "default": "Marcada por grandes transformações e momentos únicos, a **Forte Engenharia** continua crescendo e inovando para melhor atendê-los!",
       "required": true
     }
   }

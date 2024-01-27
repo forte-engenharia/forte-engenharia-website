@@ -1,6 +1,6 @@
 class HomeWorksSection {
   #homePageContent;
-  onUpdate() {
+  update() {
     this.#homePageContent = siteData.from('pagina-inicial');
     this.#updateTitle();
     this.#updateWorksCards(siteData.from('servicos'));
