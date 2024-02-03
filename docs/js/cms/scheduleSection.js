@@ -5,8 +5,8 @@ class ScheduleSection {
     this.#updateContent();
   }
   #updateContent() {
-    const scheduleTitleEl = document.getElementsByClassName('schedule__heading')[0];
-    const scheduleButton = document.getElementsByClassName('schedule__bta')[0];
+    const scheduleTitleEl = document.querySelector('.schedule__heading');
+    const scheduleButton = document.querySelector('.schedule__bta');
 
     scheduleTitleEl.innerHTML = convertMarkdownToHtml(this.#scheduleContent.titulo);
     scheduleButton.innerHTML = this.#scheduleContent.botaoTexto;
