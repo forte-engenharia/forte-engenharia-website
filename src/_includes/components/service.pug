@@ -1,0 +1,34 @@
+mixin service(service) 
+  .service
+    h1.service_title #{ service.nome }
+    .service_section 
+      .service_section_texts 
+        .service_section_title
+          | !{global.filters.html(service.paginaServico.tituloInicial)}
+        .service_section_text 
+         | !{global.filters.html(service.paginaServico.textoInicial)}
+         img(src="/assets/svg/service_reading.svg")
+      .service_section_img.border.border_right
+        img.service_section_img(src=`${global.filters.cmsImage(service.paginaServico.imagemInicial)}`, alt="Imagem de retrofit")
+    .service_works
+      h2.service_works_title #{service.paginaServico.tituloServicosPrestados}
+      .services_works_cards 
+        each servicoPrestado in service.paginaServico.servicosPrestados
+          .service_work_card
+            img.service_work_img(src=`${global.filters.cmsImage(servicoPrestado.fotos[0].imagem)}`, alt="Card retrofit")
+            .card_details
+              h2.card_details_title #{servicoPrestado.nome}
+            .card_details_extra
+              h2.card_details_title #{servicoPrestado.nome}
+              p.card_details_extra_description.opacity_fade #{servicoPrestado.descricao}
+              button(type="button" onclick=`toggleCarousel(${JSON.stringify(servicoPrestado)})` ).card_details_extra_about_btn.opacity_fade Saber mais
+    .service_section.right
+      .service_section_texts 
+        .service_section_text 
+          | !{global.filters.html(service.paginaServico.textoFinal)}
+        a(href="/services").service_return
+          button.service_return_btn 
+            img(src="/assets/svg/service_arrow.svg")
+            | Voltar para nossos serviços
+      .service_section_img.border.border_left
+        img.service_section_img(src=`${global.filters.cmsImage(service.paginaServico.imagemFinal)}`, alt="Imagem de retrofit")

@@ -27,7 +27,7 @@ class HomeWorksSection {
     const card = document.createElement('a');
     card.classList.add('work__back');
     card.ariaLabel = service.nome;
-    card.href = '/services';
+    card.href = `/services/${slug(service.nome)}`;
     card.style.backgroundImage = `url(${getCMSImageUri(service.imagem)})`;
 
     const title = document.createElement('h3');

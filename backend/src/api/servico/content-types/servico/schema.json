@@ -22,10 +22,6 @@
       "required": true,
       "default": "Confira nossos projetos de retrofit realizados."
     },
-    "texto": {
-      "type": "richtext",
-      "required": true
-    },
     "imagem": {
       "type": "media",
       "multiple": false,
@@ -34,6 +30,17 @@
         "images",
         "videos"
       ]
+    },
+    "paginaServico": {
+      "type": "component",
+      "repeatable": false,
+      "component": "servicos.servico-pagina",
+      "required": true
+    },
+    "texto": {
+      "type": "richtext",
+      "default": "Nossos serviços de retrofit podem trazer uma nova vida à fachada do seu prédio. Transforme-o em um ícone arquitetônico e valorize seu empreendimento.  Entre em contato agora mesmo para saber mais!",
+      "required": true
     }
   }
 }

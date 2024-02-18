@@ -1,5 +1,5 @@
-.show{
-  &__edit{
+.show {
+  &__edit {
     position: relative;
     z-index: 2;
     background-color: $rockcolor;
@@ -9,9 +9,9 @@
     margin-top: 500px;
     padding: 15px;
 
-    &::before{
+    &::before {
       background-color: $rockcolor;
-      content: '';
+      content: "";
       background-position: top;
       position: absolute;
       transform: rotate(-6deg);
@@ -19,20 +19,20 @@
       display: block;
       left: 0;
       width: 140%;
-  
-      @media (min-width: 2000px){
+
+      @media (min-width: 2000px) {
         top: -400px;
         height: 600px;
       }
-  
-      @media (max-width: 1999px){
+
+      @media (max-width: 1999px) {
         top: -250px;
         height: 450px;
       }
     }
   }
 
-  &__direction{
+  &__direction {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -43,7 +43,7 @@
     @media (max-width: 880px) {
       gap: 80px;
     }
-    
+
     @media (min-width: 881px) {
       gap: 100px;
     }
@@ -53,18 +53,17 @@
     }
   }
 
-  &__same{
+  &__same {
     background-color: $primarycolor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
     border-radius: 10px;
- 
-    
+
     @media (max-width: 880px) {
       height: 450px;
-      width: calc((85% / 1) - 10px)
+      width: calc((85% / 1) - 10px);
     }
-    
+
     @media (min-width: 881px) {
       width: calc((92% / 2) - 100px);
       height: 500px;
@@ -74,45 +73,45 @@
       width: calc((70% / 2) - 30px);
     }
 
-    &:hover .show__backin{
+    &:hover .show__backin {
       background-color: $primarycolor;
-      position: absolute;;
+      position: absolute;
       content: " ";
       border-radius: 10px;
       top: 0;
       height: 100%;
-      transition: all .7s ease-in-out;
+      transition: all 0.7s ease-in-out;
       overflow-y: hidden;
     }
 
-    &:hover .show__indent{
+    &:hover .show__indent {
       display: none;
     }
 
-    &:hover .show__elsep{
+    &:hover .show__elsep {
       visibility: visible;
     }
   }
 
-  &__backin{
+  &__backin {
     height: 25%;
     top: 70%;
   }
 
-  &__samecenter{
+  &__samecenter {
     @media (min-width: 881px) {
       margin-bottom: 0;
     }
   }
 
-  &__pic{
+  &__pic {
     position: relative;
     width: 100%;
     height: 70%;
     border-radius: 10px 10px 0 0;
   }
 
-  &__subtitle{
+  &__subtitle {
     font-family: $textrel;
     font-style: normal;
     font-weight: 400;
@@ -128,19 +127,18 @@
       font-size: 20px;
       line-height: 22px;
     }
-  } 
+  }
 
-  &__indent{
+  &__indent {
     color: $colorjourney;
     font-family: $textrel;
     margin: 20px;
     font-style: normal;
     font-weight: 500;
 
-
     @media (min-width: 881px) {
-    font-size: 18px;
-    line-height: 19px;
+      font-size: 18px;
+      line-height: 19px;
     }
 
     @media (max-width: 880px) {
@@ -149,17 +147,28 @@
     }
   }
 
-  &__elsep{
+  &__elsep {
     color: $colorjourney;
     font-family: $textrel;
     margin: 20px;
     font-style: normal;
     font-weight: 500;
     visibility: hidden;
-  
+
+    .show__about_button {
+      border: 2px solid #2d4c7c;
+      color: #2d4c7c;
+      font-family: "Raleway", sans-serif;
+      font-size: 1rem;
+      outline: none !important;
+      cursor: pointer;
+      background-color: transparent;
+      padding: 0.5rem;
+    }
+
     @media (min-width: 881px) {
-    font-size: 18px;
-    line-height: 21px;
+      font-size: 18px;
+      line-height: 21px;
     }
 
     @media (max-width: 880px) {

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_servicos_servico_prestados",
+  "info": {
+    "displayName": "ServicoPrestado"
+  },
+  "options": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "default": "Edifício Solar D’ América"
+    },
+    "descricao": {
+      "type": "text",
+      "required": true
+    },
+    "fotos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "servicos.foto-servico"
+    }
+  }
+}

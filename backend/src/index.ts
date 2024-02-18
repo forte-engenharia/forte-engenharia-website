@@ -1,3 +1,14 @@
+async function requestSiteRebuild() {
+  try {
+    const eleventySiteUrl = strapi.config.get("eleventy.siteUrl");
+    await fetch(`${eleventySiteUrl}/rebuild`, {
+      method: "POST",
+    });
+  } catch {
+    console.log("Could not trigger site rebuild.");
+  }
+}
+
 export default {
   /**
    * An asynchronous register function that runs before
@@ -14,5 +25,11 @@ export default {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  bootstrap(/*{ strapi }*/) {},
+  bootstrap({ strapi }) {
+    strapi.db.lifecycles.subscribe({
+      afterCreate: requestSiteRebuild,
+      afterUpdate: requestSiteRebuild,
+      afterDestroy: requestSiteRebuild,
+    });
+  },
 };

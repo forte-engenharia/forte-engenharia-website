@@ -39,7 +39,16 @@ class ServicesCardsList {
 
       return line;
     });
-    cardContent.append(subtitle, introText, ...textLinesElements);
+    const showMoreHref = document.createElement('a');
+    showMoreHref.classList.add('show__elsep');
+    showMoreHref.href = `/services/${slug(service.nome)}`;
+    const showMoreBtn = document.createElement('button');
+    showMoreBtn.classList.add('show__about_button');
+    showMoreBtn.textContent = 'Saber mais';
+
+    showMoreHref.append(showMoreBtn);
+
+    cardContent.append(subtitle, introText, ...textLinesElements, showMoreHref);
 
     card.append(cardImg, cardContent);
     return card;
