@@ -11,8 +11,6 @@ const convertMarkdownToHtml = (text) => {
   return converter.makeHtml(convertedText);
 }
 
-const CMS_URL = 'http://localhost:1337';
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy("./src/css");
@@ -34,7 +32,7 @@ module.exports = function (eleventyConfig) {
     return convertMarkdownToHtml(str);
   })
   eleventyConfig.addFilter("cmsImage", (image) => {
-    return `${CMS_URL}${image.data.attributes.url}`;
+    return image.data.attributes.url;
   });
   global.filters = eleventyConfig.javascriptFunctions;
 

@@ -1,3 +1,5 @@
 const slug = (text) => slugify(text, {
-  lower: true
+  lower: true,
+  strict: true,
+  remove: /["]/g,
 });

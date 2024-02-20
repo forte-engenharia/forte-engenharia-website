@@ -6,5 +6,5 @@ const getCMSContentByName = async (contentName) => {
 }
 
 const getCMSImageUri = (strapiImage) => {
-  return `${CMS_URL}${strapiImage.data.attributes.url}`;
+  return strapiImage.data.attributes.url;
 }
