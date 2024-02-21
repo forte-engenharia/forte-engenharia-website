@@ -1,12 +1,29 @@
+let scheduledRebuild: NodeJS.Timeout = null;
+
 async function requestSiteRebuild() {
   try {
-    const eleventySiteUrl = strapi.config.get("eleventy.siteUrl");
-    await fetch(`${eleventySiteUrl}/rebuild`, {
+    const workflowUrl = strapi.config.get("workflow.url") as string;
+    const workflowToken = strapi.config.get("workflow.token") as string;
+    await fetch(workflowUrl, {
       method: "POST",
+      body: JSON.stringify({
+        ref: "main",
+      }),
+      headers: {
+        Authorization: `Bearer ${workflowToken}`,
+      },
     });
   } catch {
     console.log("Could not trigger site rebuild.");
   }
+}
+
+function handleSiteRebuild() {
+  // After 3 minutes without modifications, it will rebuild the page.
+  if (scheduledRebuild) clearTimeout(scheduledRebuild);
+  scheduledRebuild = setTimeout(() => {
+    requestSiteRebuild();
+  }, 60 * 1000 * 3);
 }
 
 export default {
@@ -27,9 +44,9 @@ export default {
    */
   bootstrap({ strapi }) {
     strapi.db.lifecycles.subscribe({
-      afterCreate: requestSiteRebuild,
-      afterUpdate: requestSiteRebuild,
-      afterDestroy: requestSiteRebuild,
+      afterCreate: handleSiteRebuild,
+      afterUpdate: handleSiteRebuild,
+      afterDestroy: handleSiteRebuild,
     });
   },
 };
