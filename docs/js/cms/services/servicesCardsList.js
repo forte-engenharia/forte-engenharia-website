@@ -25,7 +25,7 @@ class ServicesCardsList {
     cardContent.classList.add('show__backin');
     const subtitle = document.createElement('h3');
     subtitle.classList.add('show__subtitle');
-    subtitle.innerHTML = `<strong>${service.nome.toUpperCase()}<strong/>`
+    subtitle.innerHTML = `<strong>${service.nome.toUpperCase()}</strong>`
 
     const introText = document.createElement('p');
     introText.classList.add('show__indent');

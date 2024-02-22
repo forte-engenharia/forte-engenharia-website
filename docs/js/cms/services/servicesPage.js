@@ -8,7 +8,7 @@ class ServicePage {
     const titleEl = document.querySelector('.office__titles');
     const mainTextEl = document.querySelector('.box__say');
 
-    titleEl.innerHTML = `<strong>${this.#servicePageContent.titulo}<strong/>`;
+    titleEl.innerHTML = `<strong>${this.#servicePageContent.titulo}</strong>`;
     mainTextEl.innerHTML = convertMarkdownToHtml(this.#servicePageContent.subtitulo);
   }
 }

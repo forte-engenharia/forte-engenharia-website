@@ -7,7 +7,7 @@ mixin service(service)
           | !{global.filters.html(service.paginaServico.tituloInicial)}
         .service_section_text 
          | !{global.filters.html(service.paginaServico.textoInicial)}
-         img(src="/assets/svg/service_reading.svg")
+         img.service_reading_arrow(src="/assets/svg/service_reading.svg")
       .service_section_img.border.border_right
         img.service_section_img(src=`${global.filters.cmsImage(service.paginaServico.imagemInicial)}`, alt="Imagem de retrofit")
     .service_works

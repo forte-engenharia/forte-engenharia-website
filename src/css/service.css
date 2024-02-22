@@ -362,6 +362,9 @@
       border-top-right-radius: 12px;
       width: 100%;
     }
+    .service_reading_arrow {
+      margin-top: 4rem;
+    }
     .card_details {
       background-color: white;
       padding: 2rem 2rem 4rem;

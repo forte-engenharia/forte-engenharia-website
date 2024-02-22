@@ -87,7 +87,7 @@ class HomeClientsSection {
 
     const clientServiceType = document.createElement('p');
     clientServiceType.classList.add('client__par');
-    clientServiceType.innerHTML = `<strong>Serviço: <strong/>${client.servicoTipo}`
+    clientServiceType.innerHTML = `<strong>Serviço: </strong> ${client.servicoTipo}`
 
     slide.append(clientImage, clientTitle, clientServiceType);
 

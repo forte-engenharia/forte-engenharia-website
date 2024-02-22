@@ -1,1 +1,1 @@
-const CMS_URL = 'http://localhost:1337';
+const CMS_URL = 'https://forte-engenharia-github-io.onrender.com';
