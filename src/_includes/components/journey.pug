@@ -1,36 +1,28 @@
 section.journey
+  include /components/journey_component.pug
+  include /components/journey_middle.pug
   h3.journey__title 
     strong Nossa História
-  p.journey__subtitle 
-    |  Marcada por grandes transformações e momentos únicos, a #{''} 
-    strong Forte Engenharia 
-    |  continua crescendo e inovando para melhor atendê-los!
+  .journey__subtitle
+    | !{global.filters.html(collections.pages.sobre.historiaSubtitulo)}
   .journey__timeline
-    .journey__component
-    .journey__middle.journey__middle--start
-      .journey__point.journey__point--first
-    .journey__component.journey__component--bg
-      h2.journey__time.journey__time--right 2016
-      p.journey__paragraph.journey__paragraph--right
-        | De uma ideia nasce a Forte Engenharia.
-    .journey__component.journey__component--bg
-      h2.journey__time.journey__time--left 2017
-      p.journey__paragraph.journey__paragraph--left
-        | Atendimento à Shoppings.
-    .journey__middle
-      .journey__point
-    .journey__component
-    .journey__component
-    .journey__middle
-      .journey__point
-    .journey__component.journey__component--bg
-      h2.journey__time.journey__time--right 2019
-      p.journey__paragraph.journey__paragraph--right
-        | Foco em condomínios residenciais.
-    .journey__component.journey__component--bottom.journey__component--bg
-      h2.journey__time.journey__time--left 2020
-      p.journey__paragraph.journey__paragraph--left
-        | Abertura de escritório físico.
-    .journey__middle
-      .journey__point
-    .journey__component.journey__component--bottom
+    each timelineYear, idx in timelines.data.sort((a, b) => a.attributes.ano - b.attributes.ano)
+      if idx % 2 === 0
+        +journey_component(null)
+        if idx === 0
+          +journey_middle("first")
+        else if idx === timelines.data.length - 1
+          +journey_middle("end")
+        else
+          +journey_middle()
+        +journey_component(timelineYear.attributes, idx % 2 === 0 ? 'right' : 'left')
+      else
+        +journey_component(timelineYear.attributes, idx % 2 === 0 ? 'right' : 'left')
+        if idx === 0
+          +journey_middle("first")
+        else if idx === timelines.data.length - 1
+          +journey_middle("end")
+        else
+          +journey_middle()
+        +journey_component(null)
+      

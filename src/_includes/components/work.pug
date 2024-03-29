@@ -2,7 +2,9 @@ section.work
   h2.work__title
     strong Nossos Serviços
   .work__services.js-carousel--dual
-    
+    each service in services.data
+      a.work__back(arial-label=service.attributes.nome href=`/services/${global.filters.slug(service.attributes.nome)}` style={background: `url(${global.filters.cmsImage(service.attributes.imagem)})`} loading="lazy") 
+        h3.work__text #{service.attributes.nome}
   button.js-carousel--dual-prev(aria-label='Anterior')
   button.js-carousel--dual-next(aria-label='Próximo')
   .js-carousel--dual-dots(role='tablist')

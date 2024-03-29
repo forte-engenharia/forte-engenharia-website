@@ -11,36 +11,29 @@ footer.contacts
       li.contacts__roll
         a.contacts__link(href='/services') Serviços
       li.contacts__roll
-        a.contacts__link(href='https://wa.me/5565981369818' target='_blank') Contatos
+        a.contacts__link(href=collections.pages.contato.whatsappLink target='_blank') Contatos
     ul.contacts__list
       li.contacts__headtitle
         strong Serviços
-      li.contacts__roll
-        a.contacts__link(href='/services') Projetos
-      li.contacts__roll
-        a.contacts__link(href='/services') Retrofit
-      li.contacts__roll
-        a.contacts__link(href='/services') Reformas
-      li.contacts__roll
-        a.contacts__link(href='/services') Laudos
-      li.contacts__roll
-        a.contacts__link(href='/services') Consultoria
+      each service in services.data
+        li.contacts__roll
+          a.contacts__link(href=`/services/${global.filters.slug(service.attributes.nome)}`) #{service.attributes.nome}
     ul.contacts__list
       li.contacts__headtitle
         strong Contatos
       li.contacts__roll
-        a.contacts__link.contacts__link--line(href='https://wa.me/5565981369818' target='_blank')
+        a.contacts__link.contacts__link--line(href=collections.pages.contato.whatsappLink target='_blank')
           img.contacts__frame(alt='Número' src="/assets/svg/number.svg" loading="lazy")
-          | (65) 9.8136-9818
+          | #{collections.pages.contato.whatsapp}
       li.contacts__roll
-        a.contacts__link.contacts__link--line(href='forteengenharia.cjp@gmail.com' target='_blank')
+        a.contacts__link.contacts__link--line(href=collections.pages.contato.emailLink target='_blank')
           img.contacts__frame(alt='E-mail' src="/assets/svg/email.svg" loading="lazy")
-          | forteengenharia.cjp@gmail.com
+          | #{collections.pages.contato.email}
       li.contacts__roll
-        a.contacts__link.contacts__link--line(href='https://www.instagram.com/forte.eng/' target='_blank')
+        a.contacts__link.contacts__link--line(href=collections.pages.contato.instagramLink target='_blank')
           img.contacts__frame(alt='Instagram' src="/assets/svg/insta.svg" loading="lazy")
-          | @forte.eng
+          | #{collections.pages.contato.instagram}
       li.contacts__roll
-        a.contacts__link.contacts__link--line(href='https://goo.gl/maps/ELJ9bbKz3C8F4k9MA' target='_blank')
+        a.contacts__link.contacts__link--line(href=collections.pages.contato.enderecoLink target='_blank')
           img.contacts__frame(alt='Localização' src="/assets/svg/localization.svg" loading="lazy")
-          | Rua Costa Rica, nº 13. Q.04, Cristo Rei/VG
+          | #{collections.pages.contato.endereco}

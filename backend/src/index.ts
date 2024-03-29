@@ -19,13 +19,13 @@ async function requestSiteRebuild() {
 }
 
 function handleSiteRebuild() {
+  if (process.env.NODE_ENV === "development") return;
   // After 3 minutes without modifications, it will rebuild the page.
   if (scheduledRebuild) clearTimeout(scheduledRebuild);
   scheduledRebuild = setTimeout(() => {
     requestSiteRebuild();
   }, 60 * 1000 * 3);
 }
-
 export default {
   /**
    * An asynchronous register function that runs before

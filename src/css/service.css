@@ -367,7 +367,6 @@
     }
     .card_details {
       background-color: white;
-      padding: 2rem 2rem 4rem;
       border-bottom-left-radius: 12px;
       border-bottom-right-radius: 12px;
     }
@@ -388,7 +387,6 @@
     .card_details_title {
       font-weight: bold;
       font-size: 1.25rem;
-      margin-bottom: 2rem;
     }
     .card_details_extra {
       color: #2D4C7C;

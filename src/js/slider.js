@@ -2,7 +2,7 @@
 
 const $workCarousel = document.querySelector('.js-carousel--dual');
 
-const initWorkCarousel = () => new Glider($workCarousel, {
+new Glider($workCarousel, {
   slidesToShow: 2,
   slidesToScroll: 2,
   scrollLock: true,

@@ -1,3 +1,7 @@
+const getCMSImageUri = (strapiImage) => {
+  return strapiImage.data.attributes.url;
+}
+
 class ServiceCarouselPhotos {
   static update(providedService) {
     this.#updateTitle(providedService.nome);
@@ -57,6 +61,6 @@ function toggleCarousel(providedService) {
 
   if (providedService)
     ServiceCarouselPhotos.update(providedService);
-
+  
   initServicePhotoCarousel();
 }

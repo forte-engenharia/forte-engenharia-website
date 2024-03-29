@@ -3,7 +3,7 @@ const initServicePhotoCarousel = () => {
     type: 'loop',
     perPage: 1,
     autoplay: true,
-    interval: 10000,
+    interval: 7000,
     pagination: false
   })
 

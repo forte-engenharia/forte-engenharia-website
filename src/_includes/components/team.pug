@@ -1,17 +1,10 @@
 section.team
   h2.team__heading
-    b Nosso Time
+    b #{collections.pages.sobre.timeTitulo}
   .team__space
     ul.team__about
-      li.team__eclipse
-        img.team__portrait(src="/assets/img/caroline.png" loading="lazy" alt="Caroline Borges")
-        h3.team__name Caroline Borges
-        p.team__special Especialista em Patologia das Construções.
-      li.team__eclipse
-        img.team__portrait(src="/assets/img/joaobufalo.png" loading="lazy" alt="João Búfalo")
-        h3.team__name João Búfalo
-        p.team__special Especialista Master Bim, Gestão e Projetos.
-      li.team__eclipse
-        img.team__portrait(src="/assets/img/joaopaulo.png" loading="lazy" alt="João paulo")
-        h3.team__name João Paulo
-        p.team__special Especialista em Planejamento, Gestão e Controle de obra.
+      each teamMember in teamMembers.data
+        li.team__eclipse
+          img.team__portrait(src=global.filters.cmsImage(teamMember.attributes.foto) loading="lazy" alt=teamMember.attributes.nome)
+          h3.team__name #{teamMember.attributes.nome}
+          p.team__special #{teamMember.attributes.especializacao}

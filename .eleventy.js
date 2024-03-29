@@ -1,5 +1,6 @@
 const slugify = require("slugify");
 const showdown = require('showdown');
+const { singleTypes, fetchSingleType } = require("./src/pages/index");
 
 const convertMarkdownToHtml = (text) => {
   const converter = new showdown.Converter();
@@ -35,6 +36,15 @@ module.exports = function (eleventyConfig) {
     return image.data.attributes.url;
   });
   global.filters = eleventyConfig.javascriptFunctions;
+
+  eleventyConfig.addCollection('pages', async () => {
+    const promises = singleTypes.map((singleType) => fetchSingleType(singleType))
+
+    const pagesData = await Promise.all(promises);
+    const data = Object.assign({}, ...pagesData);
+
+    return data;
+  })
 
   return {
     pathPrefix: "/",

@@ -1,10 +1,10 @@
 section.hero
   include /components/header.pug
   .hero__block
-    h1.hero__title Somos a #{''}
-      strong.hero__title.hero__title--bold Forte Engenharia
+    h1.hero__title 
+      | !{global.filters.html(collections.pages['pagina-inicial'].titulo)}
     p.hero__copy 
-      | Obra ou projeto? Nós oferecemos soluções personalizadas com excelência!
+      | #{collections.pages['pagina-inicial'].subtitulo}
     a#hero__direction.hero__direction(alt="seta" href="#features")
       .hero__arrow
       .hero__arrow
