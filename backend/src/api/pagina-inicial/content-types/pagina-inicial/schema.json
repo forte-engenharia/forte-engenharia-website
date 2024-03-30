@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "pagina_inicials",
+  "info": {
+    "singularName": "pagina-inicial",
+    "pluralName": "pagina-inicials",
+    "displayName": "InicialPagina",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitulo": {
+      "type": "string",
+      "default": "Obra ou projeto? Nós oferecemos soluções personalizadas com excelência!",
+      "required": true
+    },
+    "servicosTitulo": {
+      "type": "string",
+      "required": true,
+      "default": "Nossos Serviços"
+    },
+    "clientesTitulo": {
+      "type": "string",
+      "required": true,
+      "default": "Nossos Clientes"
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "titulo": {
+      "type": "richtext",
+      "default": "Somos a **Forte Engenharia**",
+      "required": true
+    }
+  }
+}

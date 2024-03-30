@@ -1,0 +1,8 @@
+mixin journey_component(content, position)
+  if !content
+    .journey_component
+  else
+    .journey__component.journey__component--bg
+      h2.journey__time(class=`journey__time--${position}`) #{content.ano}
+      p.journey__paragraph(class=`journey__paragraph--${position}`)
+        | #{content.texto}

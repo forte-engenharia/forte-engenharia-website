@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_servicos_servico_paginas",
+  "info": {
+    "displayName": "ServicoPagina",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imagemInicial": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "tituloServicosPrestados": {
+      "type": "string",
+      "required": true,
+      "default": "Construímos experiências com excelência!"
+    },
+    "imagemFinal": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "tituloInicial": {
+      "type": "richtext",
+      "default": "Modernize e Revitalize: Descubra o Poder do Retrofit.",
+      "required": true
+    },
+    "textoInicial": {
+      "type": "richtext",
+      "required": true
+    },
+    "textoFinal": {
+      "type": "richtext",
+      "required": true
+    },
+    "servicosPrestados": {
+      "displayName": "ServicoPrestado",
+      "type": "component",
+      "repeatable": true,
+      "component": "servicos.servico-prestado",
+      "required": true
+    }
+  }
+}

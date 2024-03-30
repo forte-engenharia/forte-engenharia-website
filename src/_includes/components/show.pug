@@ -1,57 +1,14 @@
 section.show
   .show__edit
     .show__direction
-      .show__same
-        img.show__pic(src="/assets/img/projetos.png" loading="lazy")
-        .show__backin
-          h3.show__subtitle
-            strong PROJETOS
-          p.show__indent Confira nossos projetos realizados.
-          p.show__elsep
-            | Na engenharia civil, a chave para uma obra bem-sucedida começa com um planejamento detalhado e minucioso. 
-          p.show__elsep    
-            | Nós oferecemos soluções personalizadas e inovadoras que ajudam a tornar seus projetos uma realidade. Deixe-nos ajudá-lo a construir com confiança e segurança. 
-          p.show__elsep 
-            | Entre em contato conosco hoje mesmo e comece seu projeto com o pé direito!
-      .show__same
-        img.show__pic(src="/assets/img/retrofit.png" loading="lazy")
-        .show__backin
-          h3.show__subtitle
-            strong RETROFIT
-          p.show__indent Confira nossos projetos de Retrofit realizados.
-          p.show__elsep
-            | Nossos serviços de retrofit podem trazer uma nova vida à fachada do seu prédio. Transforme-o em um ícone arquitetônico e valorize seu empreendimento. 
-          p.show__elsep
-            | Entre em contato agora mesmo para saber mais!
-      .show__same
-        img.show__pic(src="/assets/img/reforma.png" loading="lazy")
-        .show__backin
-          h3.show__subtitle
-            strong REFORMAS
-          p.show__indent Confira nossos projetos de Reforma realizados.
-          p.show__elsep
-            | Garantimos soluções inovadoras e personalizadas, concluídas dentro do prazo e do orçamento. 
-          p.show__elsep
-            | Entre em contato agora e deixe-nos fazer a transformação da sua casa acontecer!
-      .show__same
-        img.show__pic(src="/assets/img/laudos.png" loading="lazy")
-        .show__backin
-          h3.show__subtitle
-            strong LAUDOS DE INSPEÇÃO PREDIAL
-          p.show__indent O que é laudo de inspeção predial? 
-          p.show__elsep
-            | O laudo de inspeção predial é um documento obrigatório por lei que garante a segurança e valoriza o empreendimento. 
-          p.show__elsep
-            | Obtenha um laudo preciso e detalhado com nossos serviços de inspeção predial. Evite surpresas desagradáveis e reduza os riscos de acidentes. 
-          p.show__elsep
-            | Entre em contato agora e garanta a segurança dos moradores do seu edifício.
-      .show__same.show__samecenter
-        img.show__pic(src="/assets/img/consultoria.png" loading="lazy")
-        .show__backin
-          h3.show__subtitle
-            strong CONSULTORIA PARA SÍNDICOS
-          p.show__indent Como funciona a Consultoria para Síndicos?
-          p.show__elsep
-            | Conte com nossa consultoria para síndicos e tenha expertise técnica para orientar e garantir a qualidade das obras. Não se arrisque com pessoas não qualificadas. 
-          p.show__elsep
-            | Entre em contato agora e tenha tranquilidade durante as reformas
+      each service, idx in services.data
+        .show__same(class={show__samecenter: idx === services.data.length - 1})
+          img.show__pic(src=global.filters.cmsImage(service.attributes.imagem) loading="lazy")
+          .show__backin
+            h3.show__subtitle
+              strong #{service.attributes.nome.toUpperCase()}
+            p.show__indent #{service.attributes.textoIntro}
+            each paragraph in service.attributes.texto.split('\n')
+              .show__elsep !{global.filters.html(paragraph)}
+            a.show__elsep(href=`/services/${global.filters.slug(service.attributes.nome)}`)
+              button.show__about_button Saber mais

@@ -4,10 +4,10 @@ const manualButtons = document.querySelectorAll(".client__manual-btn");
 const totalButtons = radioButtons.length;
 
 for (let i = 0; i < totalButtons; i++) {
-  radioButtons[i].addEventListener("click", function() {
+  radioButtons[i].addEventListener("click", function () {
     counter = i + 1;
   });
-  manualButtons[i].addEventListener("click", function() {
+  manualButtons[i].addEventListener("click", function () {
     counter = i + 1;
   });
 }
@@ -23,3 +23,5 @@ setInterval(function () {
   manualButtons[currentButton].classList.add("active");
   counter++;
 }, 4000);
+
+

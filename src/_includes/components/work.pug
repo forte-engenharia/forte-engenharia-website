@@ -2,16 +2,9 @@ section.work
   h2.work__title
     strong Nossos Serviços
   .work__services.js-carousel--dual
-    a.work__back.work__back--projetos(arial-label='Projetos' href='/services' loading="lazy") 
-      h3.work__text PROJETOS
-    a.work__back.work__back--retrofit(arial-label='Retrofit' href='/services' loading="lazy")
-      h3.work__text RETROFIT
-    a.work__back.work__back--reforma(arial-label='Reforma' href='/services' loading="lazy")
-      h3.work__text REFORMA
-    a.work__back.work__back--laudos(arial-label='Laudos de inspeção predial' href='/services' loading="lazy")
-      h3.work__text LAUDOS DE INSPEÇÃO PREDIAL
-    a.work__back.work__back--consultoria(arial-label='Consultoria para síndicos' href='/services' loading="lazy")
-      h3.work__text CONSULTORIA PARA SÍNDICOS
+    each service in services.data
+      a.work__back(arial-label=service.attributes.nome href=`/services/${global.filters.slug(service.attributes.nome)}` style={background: `url(${global.filters.cmsImage(service.attributes.imagem)})`} loading="lazy") 
+        h3.work__text #{service.attributes.nome}
   button.js-carousel--dual-prev(aria-label='Anterior')
   button.js-carousel--dual-next(aria-label='Próximo')
   .js-carousel--dual-dots(role='tablist')

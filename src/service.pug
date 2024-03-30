@@ -1,0 +1,18 @@
+---
+title: Serviço
+layout: service.html
+pagination:
+  data: services.data
+  size: 1
+  alias: service
+permalink: "| services/#{ global.filters.slug(service.attributes.nome) }/index.html"
+---
+
+include /components/service_carousel.pug
+include /components/header.pug
+include /components/breadcrumb.pug
++breadcrumb(service.attributes.nome)
+include /components/service.pug
++service(service.attributes)
+include /components/schedule.pug
+include /components/footer.pug

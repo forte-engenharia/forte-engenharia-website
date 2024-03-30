@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "contato_secaos",
+  "info": {
+    "singularName": "contato-secao",
+    "pluralName": "contato-secaos",
+    "displayName": "ContatoSecao",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "botaoTexto": {
+      "type": "string",
+      "default": "Agende uma conversa",
+      "required": true
+    },
+    "botaoLink": {
+      "type": "string",
+      "default": "https://wa.me/5565981369818",
+      "required": true
+    },
+    "titulo": {
+      "type": "richtext",
+      "default": "Começe sua reforma com a qualidade e profissionalismo da Forte Engenharia",
+      "required": true
+    }
+  }
+}

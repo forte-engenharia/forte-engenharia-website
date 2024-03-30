@@ -1,11 +1,6 @@
 section.talks
   include /components/header.pug
-  h1.talks__title Quem somos
+  h1.talks__title #{collections.pages.sobre.titulo}
 section.box
-  p.box__say
-    | Somos uma empresa especializada em 
-    strong atendimento condominial
-    | , trabalhando com consultorias para síndicos, laudos de inspeção predial, laudos de manifestações patológicas, gestão da manutenção revitalização de fachadas e retrofit, englobando desde a fase de projetos o planejamento até a fase de construção e entrega.
-    br
-    br
-    | Uma empresa que busca atender os seus clientes com o maior grau de qualidade e profissionalismo.
+  .box__say 
+    |  !{global.filters.html(collections.pages.sobre.texto)}

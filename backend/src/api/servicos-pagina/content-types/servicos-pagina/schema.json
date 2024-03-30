@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "servicos_paginas",
+  "info": {
+    "singularName": "servicos-pagina",
+    "pluralName": "servicos-paginas",
+    "displayName": "ServicosPagina"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true,
+      "default": "Serviços"
+    },
+    "subtitulo": {
+      "type": "richtext",
+      "default": "Bem-vindo à Forte Engenharia! Somos especialistas em atendimento condominial, execução de obras, projetos, laudos, inspeções prediais e retrofit.  Se você precisa de soluções confiáveis e de qualidade para seu condomínio ou edifício, entre em contato conosco. Não perca mais tempo e garanta já sua avaliação!   PROJETOS Confira nossos projetos realizados.",
+      "required": true
+    }
+  }
+}

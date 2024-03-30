@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "servicos",
+  "info": {
+    "singularName": "servico",
+    "pluralName": "servicos",
+    "displayName": "servico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "default": "Retrofit"
+    },
+    "textoIntro": {
+      "type": "string",
+      "required": true,
+      "default": "Confira nossos projetos de retrofit realizados."
+    },
+    "imagem": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "paginaServico": {
+      "type": "component",
+      "repeatable": false,
+      "component": "servicos.servico-pagina",
+      "required": true
+    },
+    "texto": {
+      "type": "richtext",
+      "default": "Nossos serviços de retrofit podem trazer uma nova vida à fachada do seu prédio. Transforme-o em um ícone arquitetônico e valorize seu empreendimento.  Entre em contato agora mesmo para saber mais!",
+      "required": true
+    }
+  }
+}
