@@ -4,7 +4,7 @@ const singleTypes = ['contato', 'contato-secao', 'pagina-inicial', 'servicos-pag
 
 const fetchSingleType = async (singleType) => {
   try {
-    const res = await axios.get(`http://localhost:1337/api/${singleType}?populate=deep`);
+    const res = await axios.get(`https://forte-engenharia-github-io.onrender.com/api/${singleType}?populate=deep`);
     return { [singleType]: res.data.data.attributes };
   } catch (error) {
     console.error(error);
